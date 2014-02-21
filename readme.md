@@ -1,3 +1,3 @@
-Project:     Py Timetable
+Project:     My Timetable
 
 Environment: Django on Python
