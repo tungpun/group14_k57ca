@@ -1,4 +1,6 @@
 Project:     My Timetable
 
-Environment: Python on Django
+Environment: Django on Python
+
+Interpreter: Python 2.7
 
