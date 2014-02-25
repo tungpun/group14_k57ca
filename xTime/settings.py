@@ -1,5 +1,5 @@
 """
-Django settings for mytimetable project.
+Django settings for xTime project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -49,9 +49,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'mytimetable.urls'
+ROOT_URLCONF = 'xTime.urls'
 
-WSGI_APPLICATION = 'mytimetable.wsgi.application'
+WSGI_APPLICATION = 'xTime.wsgi.application'
 
 
 # Database
