@@ -1,46 +1,60 @@
-<p align = 'center'>Period of timetable 2:</p>
-<br/>
-<table align = 'center' border-collapse = collapse border = 1px solid black>
-    <tr>
-        <td>PERIODS</td>
-        <td>MONDAY</td>
-        <td>TUESDAY</td>
-        <td>WEDNEDDAY</td>
-        <td>THURSDAY</td>
-        <td>FRIDAY</td>
-        <td>SATURDAY</td>
-        <td>SUNDAY</td>
-    </tr>
-{% for i in "0123456789" %}
-    <tr>
-        <td align="center">{{ i|add:"1" }} </td>
-    {% for j in "0123456" %}
-        {% for period in periods_array %}
-            {% ifequal i period.per %}
-                {% ifequal j period.day %}
-                    {% ifnotequal period.name 0 %}
-                        <td align="center"
-                            {% for period in periods_array %}
-                                {% ifequal i period.per %}
-                                    {% ifequal j period.day %}
-                                        rowspan = "{{ period.length }}"
-                                    {% endifequal %}
-                                {% endifequal %}
-                            {% endfor %}
-                        >
-                            {% for period in periods_array %}
-                                {% ifequal i period.per %}
-                                    {% ifequal j period.day %}
-                                        {{ period.name }}
-                                    {% endifequal %}
-                                {% endifequal %}
-                            {% endfor %}
-                        </td>
-                    {% endifnotequal %}
-                {% endifequal %}
-            {% endifequal %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Timetables Board</title>
+</head>
+<body>
+    {% ifequal timetable_id "0" %}
+        <p align = 'center'>GOTO http://127.0.0.1:8000/timetables/id=...</p>
+    {% else %}
+        <p align = 'center'>Period of timetable {{ timetable_id }} :</p>
+        <br/>
+        <table align = 'center' border-collapse = collapse border = 1px solid black>
+            <tr>
+                <td>PERIODS</td>
+                <td>MONDAY</td>
+                <td>TUESDAY</td>
+                <td>WEDNEDDAY</td>
+                <td>THURSDAY</td>
+                <td>FRIDAY</td>
+                <td>SATURDAY</td>
+                <td>SUNDAY</td>
+            </tr>
+        {% for i in "0123456789" %}
+            <tr>
+                <td align="center">{{ i|add:"1" }} </td>
+            {% for j in "0123456" %}
+                {% for period in periods_array %}
+                    {% ifequal i period.per %}
+                        {% ifequal j period.day %}
+                            {% ifnotequal period.name 0 %}
+                                <td align="center"
+                                    {% for period in periods_array %}
+                                        {% ifequal i period.per %}
+                                            {% ifequal j period.day %}
+                                                rowspan = "{{ period.length }}"
+                                            {% endifequal %}
+                                        {% endifequal %}
+                                    {% endfor %}
+                                >
+                                    {% for period in periods_array %}
+                                        {% ifequal i period.per %}
+                                            {% ifequal j period.day %}
+                                                {{ period.name }}
+                                            {% endifequal %}
+                                        {% endifequal %}
+                                    {% endfor %}
+                                </td>
+                            {% endifnotequal %}
+                        {% endifequal %}
+                    {% endifequal %}
+                {% endfor %}
+            {% endfor %}
+            </tr>
         {% endfor %}
-    {% endfor %}
-    </tr>
-{% endfor %}
+    {% endifequal %}
+
+</body>
+</html>
+
 

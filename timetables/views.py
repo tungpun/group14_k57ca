@@ -1,21 +1,22 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+
 # Create your views here.
 
 from models import Timetable
 from periods.models import Period
+from forms import InsertTimetableForm
 
 
 def index(request):
-    timetables_array = Timetable.objects.all()
-    content = {'timetables_array': timetables_array}
-    return render(request, 'timetables/index.html', content)
+    return render(request, 'timetables/index.html')
 
 
-def board(request):
+def board(request, pid="0"):    # default of pid is 1
     objs = []
 
-    periods_array = Period.objects.filter(timetable_id=2)
+    periods_array = Period.objects.filter(timetable_id=pid)
     for period in periods_array:
         objs.append(period)
 
@@ -43,5 +44,21 @@ def board(request):
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
 
-    content = {'periods_array': objs}
+    content = {
+        'timetable_id': pid,
+        'periods_array': objs}
     return render(request, 'timetables/board/index.html', content)
+
+
+def add(request):             # add Timetable
+    if request.method == 'POST':            # if the form has been submitted...
+        form = InsertTimetableForm(request.POST)             # A form bound to the POST data
+        if form.is_valid():          # All validation rules pass
+
+            # SOLVE AT HERE...
+            return HttpResponseRedirect('/timetables/')           # Redirect after POST
+    else:
+        form = InsertTimetableForm()
+
+    return render(request, 'timetables/add/index.html', {
+        'form': form})

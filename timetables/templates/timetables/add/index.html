@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Timetable</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}      <!-- Protection against Cross Site Request Forgeries -->
+        {{ form.as_p }}
+    <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
