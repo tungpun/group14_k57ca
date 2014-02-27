@@ -13,6 +13,14 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+STATICFILES_DIRS = (
+    "..\\xTime\static",
+    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(os.path.dirname(__file__), 'static').replace('\\', '/'),
+)
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -83,5 +91,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
+#MEDIA_ROOT = ''
+#MEDIA_URL = ''
+#STATIC_ROOT = ''
 STATIC_URL = '/static/'

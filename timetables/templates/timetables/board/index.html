@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />
     <title>Show Timetables Board</title>
 </head>
 <body>
+
     {% ifequal timetable_id "0" %}
         <p align = 'center'>GOTO http://127.0.0.1:8000/timetables/id=...</p>
     {% else %}
         <p align = 'center'>Period of timetable {{ timetable_id }} :</p>
         <br/>
-        <table align = 'center' border-collapse = collapse border = 1px solid black>
+        <table>
             <tr>
                 <td>PERIODS</td>
                 <td>MONDAY</td>
@@ -53,7 +56,7 @@
             </tr>
         {% endfor %}
     {% endifequal %}
-
+        </table>
 </body>
 </html>
 
