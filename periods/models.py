@@ -6,6 +6,7 @@ from timetables.models import Timetable
 #class Timetable(models.Model):
  #   pass
 
+
 class Period(models.Model):
     code = models.CharField(max_length=10)
     name = models.CharField(max_length=30)

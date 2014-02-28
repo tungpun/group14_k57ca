@@ -54,10 +54,8 @@ def add(request):             # add Timetable
     if request.method == 'POST':            # if the form has been submitted...
         form = InsertTimetableForm(request.POST)             # A form bound to the POST data
         if form.is_valid():          # All validation rules pass
-
             new_timetable = Timetable(code=form.cleaned_data['code'], name=form.cleaned_data['name'])
             new_timetable.save()
-            # SOLVE AT HERE...
             return HttpResponseRedirect('/timetables/')           # Redirect after POST
     else:
         form = InsertTimetableForm()
