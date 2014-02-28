@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0d81a6-b295-46c3-8297-a42b7a4a39aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/templates/subjects/index.html" afterPath="$PROJECT_DIR$/periods/templates/subjects/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/urls.py" afterPath="$PROJECT_DIR$/periods/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/views.py" afterPath="$PROJECT_DIR$/periods/views.py" />
     </list>
     <ignored path="Timetable.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/periods/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state line="5" column="42" selection-start="127" selection-end="127" vertical-scroll-proportion="0.14529915" vertical-offset="0" max-vertical-offset="585">
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -47,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="0.18214285" vertical-offset="0" max-vertical-offset="560">
+            <state line="6" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -88,11 +86,11 @@
         <option value="$PROJECT_DIR$/mytimetable/timetables/templates/timetables/board/index.html" />
         <option value="$PROJECT_DIR$/mytimetable/periods/urls.py" />
         <option value="$PROJECT_DIR$/timetables/urls.py" />
-        <option value="$PROJECT_DIR$/periods/urls.py" />
         <option value="$PROJECT_DIR$/periods/views.py" />
         <option value="$PROJECT_DIR$/periods/templates/subjects/information/index.html" />
         <option value="$PROJECT_DIR$/timetables/templates/timetables/board/index.html" />
         <option value="$PROJECT_DIR$/periods/templates/subjects/index.html" />
+        <option value="$PROJECT_DIR$/periods/urls.py" />
       </list>
     </option>
   </component>
@@ -586,19 +584,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/periods/urls.py">
+    <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="238">
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state line="6" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="255">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/index.html">
+    <entry file="file://$PROJECT_DIR$/periods/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="0.18214285" vertical-offset="0" max-vertical-offset="560">
-          <folding />
+        <state line="5" column="42" selection-start="127" selection-end="127" vertical-scroll-proportion="0.14529915" vertical-offset="0" max-vertical-offset="585">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
