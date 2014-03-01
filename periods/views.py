@@ -9,24 +9,23 @@ from forms import EditPeriodForm
 
 def index(request):
     periods_array = Period.objects.all()
-    context = {'subjects_array': periods_array}
-    return render(request, 'subjects/index.html', context)
+    context = {'periods_array': periods_array}
+    return render(request, 'periods/index.html', context)
 
 
-def information(request, pid="0"):
+def detail(request, pid="0"):
     objs = []
-    subjects_array = Period.objects.filter(id=pid)
-    for subject in subjects_array:
-        objs.append(subject)
+    periods = Period.objects.filter(id=pid)
+    for period in periods:
+        objs.append(period)
     content = {
         'period_id': pid,
-        'subjects_array': objs
+        'periods': objs,
     }
-    return render(request, 'subjects/information/index.html', content )
+    return render(request, 'periods/detail/index.html', content)
 
 
 def edit(request, pid="0"):
-
     if request.method == 'POST':            # if the form has been submitted...
         form = EditPeriodForm(request.POST)             # A form bound to the POST data
         if form.is_valid():          # All validation rules pass
@@ -38,5 +37,5 @@ def edit(request, pid="0"):
             return HttpResponseRedirect('/periods/id='+pid)           # Redirect after POST
     else:
         form = EditPeriodForm()
-    return render(request, 'subjects/edit/index.html', {
+    return render(request, 'periods/edit/index.html', {
         'form': form})

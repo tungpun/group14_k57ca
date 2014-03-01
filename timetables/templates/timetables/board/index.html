@@ -12,49 +12,54 @@
     {% else %}
         <p align = 'center'>Period of timetable {{ timetable_id }} :</p>
         <br/>
-        <table>
-            <tr>
-                <td>PERIODS</td>
-                <td>MONDAY</td>
-                <td>TUESDAY</td>
-                <td>WEDNEDDAY</td>
-                <td>THURSDAY</td>
-                <td>FRIDAY</td>
-                <td>SATURDAY</td>
-                <td>SUNDAY</td>
-            </tr>
+        <table align='center' width=900 border = 1>
+            <thead align='center'>
+                <tr>
+                    <td>PERIODS</td>
+                    <td>MONDAY</td>
+                    <td>TUESDAY</td>
+                    <td>WEDNEDDAY</td>
+                    <td>THURSDAY</td>
+                    <td>FRIDAY</td>
+                    <td>SATURDAY</td>
+                    <td>SUNDAY</td>
+                </tr>
+            </thead>
+            <tbody>
         {% for i in "0123456789" %}
-            <tr>
-                <td align="center">{{ i|add:"1" }} </td>
-            {% for j in "0123456" %}
-                {% for period in periods_array %}
-                    {% ifequal i period.per %}
-                        {% ifequal j period.day %}
-                            {% ifnotequal period.name 0 %}
-                                <td align="center"
-                                    {% for period in periods_array %}
-                                        {% ifequal i period.per %}
-                                            {% ifequal j period.day %}
-                                                rowspan = "{{ period.length }}"
+                <tr>
+                    <td align="center">{{ i|add:"1" }} </td>
+                {% for j in "0123456" %}
+                    {% for period in periods_array %}
+                        {% ifequal i period.per %}
+                            {% ifequal j period.day %}
+                                {% ifnotequal period.name 0 %}
+                                    <td align="center"
+                                        {% for period in periods_array %}
+                                            {% ifequal i period.per %}
+                                                {% ifequal j period.day %}
+                                                    rowspan = "{{ period.length }}"
+                                                {% endifequal %}
                                             {% endifequal %}
-                                        {% endifequal %}
-                                    {% endfor %}
-                                >
-                                    {% for period in periods_array %}
-                                        {% ifequal i period.per %}
-                                            {% ifequal j period.day %}
-                                                {{ period.name }}
+                                        {% endfor %}
+                                    >
+                                        {% for period in periods_array %}
+                                            {% ifequal i period.per %}
+                                                {% ifequal j period.day %}
+                                                    <a href="../periods/id={{period.id}}">{{ period.name }}</a>
+                                                {% endifequal %}
                                             {% endifequal %}
-                                        {% endifequal %}
-                                    {% endfor %}
-                                </td>
-                            {% endifnotequal %}
+                                        {% endfor %}
+                                    </td>
+                                {% endifnotequal %}
+                            {% endifequal %}
                         {% endifequal %}
-                    {% endifequal %}
+                    {% endfor %}
                 {% endfor %}
-            {% endfor %}
-            </tr>
+                </tr>
+
         {% endfor %}
+            </tbody>
     {% endifequal %}
         </table>
 </body>

@@ -35,7 +35,7 @@ def board(request, pid="0"):    # default of pid is 1
             if mark:
                 objs.append(Period(position=i, name=0))
             else:
-                objs.append(Period(position=i, name=""))
+                objs.append(Period(position=i, name="", length=0))
 
     for obj in objs:
         obj.day = str((obj.position - 1) / 10)

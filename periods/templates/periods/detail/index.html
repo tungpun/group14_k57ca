@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Show Subject Information</title>
+    <title>Show Period Information</title>
 </head>
 <body>
     {% ifequal period_id "0" %}
         <p align = 'center'>GOTO http://127.0.0.1:8000/periods/id=...</p>
     {% else %}
-        <p align = 'center'>Subject Information {{ period_id }} :</p>
+        <p align = 'center'>Period Information {{ period_id }} :</p>
     {% endifequal %}
         <br/>
     <table align = 'center' width = 400 border = 5>
@@ -19,17 +19,19 @@
             <td>Postion</td>
             <td>Length</td>
         </tr>
-    {% for subject in subjects_array %}
+    {% for period in periods %}
         <tr>
-            <td> {{ subject.id }} </td>
-            <td> {{ subject.code }} </td>
-            <td> {{ subject.name }} </td>
-            <td> {{ subject.lecturer }} </td>
-            <td> {{ subject.position }} </td>
-            <td> {{ subject.length }} </td>
+            <td> {{ period.id }} </td>
+            <td> {{ period.code }} </td>
+            <td> {{ period.name }} </td>
+            <td> {{ period.lecturer }} </td>
+            <td> {{ period.position }} </td>
+            <td> {{ period.length }} </td>
         </tr>
     {% endfor %}
-
     </table>
+
+    <p align="center"><a href="edit/id={{period_id}}">Edit</a></p>
+
 </body>
 </html>
