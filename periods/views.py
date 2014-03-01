@@ -39,3 +39,18 @@ def edit(request, pid="0"):
         form = EditPeriodForm()
     return render(request, 'periods/edit/index.html', {
         'form': form})
+
+def add(request, pid="0"):
+
+    if request.method == 'POST':            # if the form has been submitted...
+        form = EditPeriodForm(request.POST)             # A form bound to the POST data
+        if form.is_valid():          # All validation rules pass
+            new_period = Period(code=form.cleaned_data['code'], name=form.cleaned_data['name'],
+                                lecturer=form.cleaned_data['lecturer'], position=form.cleaned_data['position'],
+                                length=form.cleaned_data['length'], timetable_id=pid)
+            new_period.save()
+            return HttpResponseRedirect('/timetables/id='+pid)           # Redirect after POST
+    else:
+        form = EditPeriodForm()
+    return render(request, 'periods/edit/index.html', {
+        'form': form})
