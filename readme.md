@@ -1,4 +1,4 @@
-Project:     xTime
+Project:     Time Machine
 
 Subject:	 Software Engineering
 
