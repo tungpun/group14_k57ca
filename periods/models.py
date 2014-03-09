@@ -2,10 +2,10 @@ from django.db import models
 
 # Create your models here.
 from timetables.models import Timetable
-
+from django import forms
 #class Timetable(models.Model):
  #   pass
-<<<<<<< HEAD
+
 MONDAY = 0
 TUESDAY = 1
 WEDNESDAY = 2
@@ -41,14 +41,8 @@ class Period(models.Model):
     code = models.CharField(max_length=10)
     name = models.CharField(max_length=30)
     lecturer = models.CharField(max_length=30)
-    day = models.IntegerField(max_length=2,
-                                choices=DAY_CHOICES,
-                                default=MONDAY)
-    start = models.IntegerField(max_length=2,
-                                choices=ORDER_CHOICES,
-                                default=1)
     length = models.IntegerField(max_length=2)
     timetable = models.ForeignKey(Timetable)
-    position = models.IntegerField(max_length=2)
-    length = models.IntegerField(max_length=2)
-    timetable = models.ForeignKey(Timetable)
+   # position = form.cleaned_data['day'] * 10 + form.cleaned_data['start']
+
+
