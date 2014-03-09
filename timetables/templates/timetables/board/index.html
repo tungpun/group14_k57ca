@@ -63,6 +63,80 @@
     {% endifequal %}
         </table>
 </body>
+<body>
+
+    {% ifequal timetable_id "0" %}
+        <p align = 'center'>GOTO http://127.0.0.1:8000/timetables/id=...</p>
+    {% else %}
+        <p align = 'center'>School schedule :</p>
+        <br/>
+        <table align='center' width=900 border = 1>
+            <thead align='center'>
+                <tr>
+                    <td>Task</td>
+                    <td>Period 1</td>
+                    <td>Period 2</td>
+                    <td>Period 3</td>
+                    <td>Period 4</td>
+                    <td>Period 5</td>
+                    <td>Period 6</td>
+                    <td>Period 7</td>
+					<td>Period 8</td>
+					<td>Period 9</td>
+					<td>Period 10</td>
+                </tr>
+            </thead>
+			
+			<thead align='center'>
+                <tr>
+                    <td>Work</td>
+                    <td>07h00'~07h50'</td>
+                    <td>08h00'~08h50'</td>
+					<td>09h00'~09h50'</td>
+					<td>10h00'~10h50'</td>
+					<td>11h00'~11h50'</td>
+					<td>13h00'~13h50'</td>
+					<td>14h00'~14h50'</td>
+					<td>15h00'~15h50'</td>
+					<td>16h00'~16h50'</td>
+					<td>17h00'~17h50'</td>
+                </tr>
+            </thead>
+           
+		   <thead align='center'>
+                <tr>
+                    <td>Rest</td>
+                    <td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+					<td>10 mins</td>
+                </tr>
+            </thead>
+			
+			<thead align='center'>
+                <tr>
+                    <td>Day</td>
+                    <td>Morning</td>
+                    <td>Morning</td>
+					<td>Morning</td>
+					<td>Morning</td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Afternoon</td>
+					<td>Afternoon</td>
+					<td>Afternoon</td>
+					<td>Afternoon</td>
+                </tr>
+            </thead>
+    {% endifequal %}
+        </table>
+</body>
 </html>
 
 
