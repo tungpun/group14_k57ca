@@ -10,28 +10,39 @@
         <p align = 'center'>Period Information {{ period_id }} :</p>
     {% endifequal %}
         <br/>
-    <table align = 'center' width = 400 border = 5>
-        <tr>
-            <td>ID</td>
-            <td>Code</td>
-            <td>Name</td>
-            <td>Lecturer</td>
-            <td>Postion</td>
-            <td>Length</td>
-        </tr>
     {% for period in periods %}
-        <tr>
-            <td> {{ period.id }} </td>
-            <td> {{ period.code }} </td>
-            <td> {{ period.name }} </td>
-            <td> {{ period.lecturer }} </td>
-            <td> {{ period.position }} </td>
-            <td> {{ period.length }} </td>
-        </tr>
+    <table align = 'center' width = 400 border = 1>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td> {{ period.id }} </td>
+            </tr>
+            <tr>
+                <td>Code</td>
+                <td> {{ period.code }} </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td> {{ period.name }} </td>
+            </tr>
+            <tr>
+                <td>Lecturer</td>
+                <td> {{ period.lecturer }} </td>
+            </tr>
+            <tr>
+                <td>Postion</td>
+                <td> {{ period.position }} </td>
+            </tr>
+            <tr>
+                <td>Length</td>
+                  <td> {{ period.length }} </td>
+            </tr>
+        </tbody>
     {% endfor %}
     </table>
 
-    <p align="center"><a href="edit/id={{period_id}}">Edit</a></p>
-
+    <p align="center">
+        <a href="edit/id={{period_id}}">Edit</a>
+    </p>
 </body>
 </html>

@@ -43,6 +43,6 @@ class Period(models.Model):
     lecturer = models.CharField(max_length=30)
     length = models.IntegerField(max_length=2)
     timetable = models.ForeignKey(Timetable)
-   # position = form.cleaned_data['day'] * 10 + form.cleaned_data['start']
+    position = models.IntegerField(max_length=2)
 
 
