@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+    <form action='' method="POST">
+        Plz login to use our service!
+        {% csrf_token %}      <!-- Protection against Cross Site Request Forgeries -->
+        {{form.as_p}}
+        <input type="submit" value="Login"/>
+    </form>
+        Or you can create a new account at <a href="/users/auth_register">here</a>.
+</body>
+</html>

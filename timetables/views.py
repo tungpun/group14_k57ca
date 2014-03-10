@@ -44,10 +44,18 @@ def board(request, pid="0"):    # default of pid is 1
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
 
-    content = {
-        'timetable_id': pid,
-        'periods_array': objs}
-    return render(request, 'timetables/board/index.html', content)
+    current_user = request.user
+    if not current_user.is_authenticated():
+        request.user = 'Guest'
+        #return render(request, '/../users/login')
+        return HttpResponseRedirect('/users/auth_login')
+    else:
+        content = {
+            'timetable_id': pid,
+            'periods_array': objs,
+            'username': current_user
+        }
+        return render(request, 'timetables/board/index.html', content)
 
 
 def add(request):             # add Timetable

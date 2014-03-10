@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register page</title>
+</head>
+<body>
+     <form action='' method="POST">
+        {% csrf_token %}      <!-- Protection against Cross Site Request Forgeries -->
+        {{form.as_p}}
+        <input type="submit" value="Register"/>
+     </form>
+</body>
+</html>

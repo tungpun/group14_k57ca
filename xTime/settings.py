@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'timetables',
     'periods',
+    'users'
 )
 
 MIDDLEWARE_CLASSES = (
