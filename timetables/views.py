@@ -34,12 +34,6 @@ def board(request):    # default of pid is 1
     else:
         pid = 0
         return HttpResponseRedirect("/add")
-    #except Timetable.DoesNotExist:
-     #   pid = 0
-      #  return
-
-    #for ct in ctimetable:
-     #   pid = ct.id
 
     periods_array = Period.objects.filter(timetable_id=pid)
     for period in periods_array:

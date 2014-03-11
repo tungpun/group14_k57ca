@@ -41,7 +41,9 @@
                                         {% for period in periods_array %}
                                             {% ifequal i period.per %}
                                                 {% ifequal j period.day %}
-                                                    rowspan = "{{ period.length }}"
+                                                    {% ifnotequal period.length 0 %}
+                                                        rowspan = "{{ period.length }}"
+                                                    {% endifnotequal %}
                                                 {% endifequal %}
                                             {% endifequal %}
                                         {% endfor %}
@@ -62,8 +64,9 @@
                 </tr>
 
         {% endfor %}
-            </tbody>
+
     {% endifequal %}
+        </tbody>
         </table>
 
     <br/>
