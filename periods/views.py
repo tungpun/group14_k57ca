@@ -8,14 +8,23 @@ from forms import EditPeriodForm
 
 
 def index(request):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/users/auth_login')
+
     periods_array = Period.objects.all()
     context = {'periods_array': periods_array}
     return render(request, 'periods/index.html', context)
 
 
 def detail(request, pid="0"):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/users/auth_login')
+
     objs = []
     periods = Period.objects.filter(id=pid)
+    if not periods.exists():
+        return HttpResponse("Period not found!")
+
     for period in periods:
         objs.append(period)
     content = {
@@ -26,6 +35,9 @@ def detail(request, pid="0"):
 
 
 def edit(request, pid="0"):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/users/auth_login')
+
     if request.method == 'POST':            # if the form has been submitted...
         form = EditPeriodForm(request.POST)             # A form bound to the POST data
         if form.is_valid() and form.check_conflict(pid):          # All validation rules pass
@@ -44,6 +56,9 @@ def edit(request, pid="0"):
 
 
 def add(request, pid="0"):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/users/auth_login')
+
     if request.method == 'POST':            # if the form has been submitted...
         form = EditPeriodForm(request.POST)             # A form bound to the POST data
         if form.is_valid() and form.check_conflict(pid):          # All validation rules pass
@@ -55,7 +70,7 @@ def add(request, pid="0"):
                 length=form.cleaned_data['length'],
                 timetable_id=pid)
             new_period.save()
-            return HttpResponseRedirect('/timetables/id='+pid)           # Redirect after POST
+            return HttpResponseRedirect('/')           # Redirect after POST
         else:
             return HttpResponse("Wrong Input! Try again, pls")
     else:
