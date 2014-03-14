@@ -14,11 +14,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 STATICFILES_DIRS = (
-    "..\\xTime\static",
+    "..\\50minutes\static",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(os.path.dirname(__file__), 'static').replace('\\', '/'),
+)
+
+TEMPLATE_DIRS = (
+    os.path.realpath('.') + "/template"
 )
 
 # Quick-start development settings - unsuitable for production
@@ -46,7 +50,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'timetables',
     'periods',
-    'users'
+    'users',
 )
 
 MIDDLEWARE_CLASSES = (

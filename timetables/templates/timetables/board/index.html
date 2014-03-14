@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    {% load staticfiles %}
+{% extends "base.html" %}
+{% block slide01 %}
+    <!-- {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />
     <title>Show Timetables Board</title>
     <div align="center"><b>Hi, {{username}}</b>
@@ -9,11 +8,11 @@
     </div>
 </head>
 <body>
-
+-->
+<div class="slide01">
     {% ifequal timetable_id "0" %}
         <p align = 'center'>GOTO http://127.0.0.1:8000/timetables/id=...</p>
     {% else %}
-        <p align = 'center'>Period of timetable {{ timetable_id }} :</p>
         <br/>
         <table align='center' width=900 border = 1>
             <thead align='center'>
@@ -68,9 +67,12 @@
     {% endifequal %}
         </tbody>
         </table>
-
     <br/>
-    <center><a href="../periods/add/id={{timetable_id}}">Add period</a></center>
+    <center><a class="btn btn-sm btn-success" href="../periods/add/id={{timetable_id}}" role="button">Add new period</a></center>
+</div>
+{% endblock slide01 %}
+
+
 
 
     {% ifequal timetable_id "0" %}
@@ -94,7 +96,7 @@
 					<td>Period 10</td>
                 </tr>
             </thead>
-			
+
 			<thead align='center'>
                 <tr>
                     <td>Work</td>
@@ -110,7 +112,7 @@
 					<td>17h00'~17h50'</td>
                 </tr>
             </thead>
-           
+
 		   <thead align='center'>
                 <tr>
                     <td>Rest</td>
@@ -126,7 +128,7 @@
 					<td>10 mins</td>
                 </tr>
             </thead>
-			
+
 			<thead align='center'>
                 <tr>
                     <td>Day</td>
@@ -144,7 +146,5 @@
             </thead>
     {% endifequal %}
         </table>
-</body>
-</html>
 
 

@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <form action="" method="post">
-        {% csrf_token %}      <!-- Protection against Cross Site Request Forgeries -->
-        {{ form.as_p }}
-    <input type="submit" value="Submit"/>
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Edit subject | Time Machine {% endblock title %}
+{% block carousel %}
+{% endblock carousel %}
+{% block main-content %}
+    <div name="edit" id="mylogin" class="navbar-collapse collapse">
+        <form action="" role="form" method="post">
+            {% csrf_token %}      <!-- Protection against Cross Site Request Forgeries -->
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit" name="submit" value="Save">Save</button>
+        </form>
+    </div>
+{% endblock main-content %}
