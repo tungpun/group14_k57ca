@@ -23,7 +23,7 @@ def index(request):
 def board(request):    # default of pid is 1
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
-
+    # request.session['a'] = 1
     objs = []
 
     #try:
