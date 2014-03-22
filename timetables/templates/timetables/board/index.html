@@ -36,7 +36,7 @@
                         {% ifequal i period.per %}
                             {% ifequal j period.day %}
                                 {% ifnotequal period.name 0 %}
-                                    <td align="center"
+                                    <td align='center'
                                         {% for period in periods_array %}
                                             {% ifequal i period.per %}
                                                 {% ifequal j period.day %}
@@ -72,8 +72,7 @@
 </div>
 {% endblock slide01 %}
 
-
-    {% ifequal timetable_id "0" %}
+        {% ifequal timetable_id "0" %}
         <p align = 'center'>GOTO http://127.0.0.1:8000/timetables/id=...</p>
     {% else %}
         <p align = 'center'>School schedule :</p>
@@ -144,7 +143,6 @@
             </thead>
     {% endifequal %}
         </table>
-
 
 {% block extra-table %}
 <div class="container">

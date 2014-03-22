@@ -1,8 +1,10 @@
-Project:     45minutes
+Project:     50minutes
 
 Subject:	 Software Engineering
 
-Environment: Django on Python
+Product type: Web App
+
+Framework: Python Django
 
 Interpreter: Python 2.7
 

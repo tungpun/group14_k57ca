@@ -36,6 +36,7 @@ def board(request):    # default of pid is 1
         return HttpResponseRedirect("/add")
 
     periods_array = Period.objects.filter(timetable_id=pid)
+
     for period in periods_array:
         objs.append(period)
 
@@ -66,6 +67,7 @@ def board(request):    # default of pid is 1
     course_new = Period.objects.all().order_by('-id')[:10]
     course_hot = Period.objects.all().order_by('?')[:10]
     course_recommend = Period.objects.all().order_by('?')[:10]
+
 
     current_user = request.user
 
