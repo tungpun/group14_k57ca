@@ -64,9 +64,9 @@ def board(request):    # default of pid is 1
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
 
-    course_new = Period.objects.all().order_by('-id')[:10]
-    course_hot = Period.objects.all().order_by('?')[:10]
-    course_recommend = Period.objects.all().order_by('?')[:10]
+    course_new = Period.objects.all().order_by('-id')[:5]
+    course_hot = Period.objects.all().order_by('?')[:5]
+    course_recommend = Period.objects.all().order_by('?')[:5]
 
 
     current_user = request.user
