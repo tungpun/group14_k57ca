@@ -51,8 +51,13 @@ def edit(request, pid="0"):
             return HttpResponse("Wrong Input! Try again, pls")
     else:
         form = EditPeriodForm()
+    period_obj = Period.objects.filter(id=pid)[0]
+    period_obj.day = period_obj.position / 10 + 1
+    period_obj.start = (period_obj.position - 1) % 10 + 1
     return render(request, 'periods/edit/index.html', {
-        'form': form})
+        'form': form,
+        'period_obj': period_obj
+    })
 
 
 def add(request, pid="0"):

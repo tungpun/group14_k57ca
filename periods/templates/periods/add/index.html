@@ -3,9 +3,10 @@
 {% block carousel %}
 {% endblock carousel %}
 {% block main-content %}
+
         <div class="container">
             <form name="add" id="addform" action="" method="post" enctype="multipart/form-data">
-                {% csrf_token %}  <!-- Protection against Cross Site Request Forgeries -->
+                {% csrf_token %}
                 <table>
                 <div name="edit" class="navbar-collapse collapse" >
                     <div class="form-group">
@@ -32,21 +33,41 @@
                     <div class="form-group">
                         <tr>
                             <td width="10%"><h4>Day:</h4></td>
-                            <td><input type="listbox" name="day" class="form-control"></td>
+                            <!-- <td><input type="listbox" name="day" class="form-control"></td> -->
+                            <td>
+                            <select name="day" size="1" class="form-control">
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                                <option value="7">Sunday</option>
+                            </select>
+                            </td>
                         </tr>
                     </div>
 
                     <div class="form-group">
                         <tr>
                             <td width="10%"><h4>Start:</h4></td>
-                            <td><input type="listbox" name="start" class="form-control"></td>
+                            <!-- <td><input type="listbox" name="start" class="form-control"></td> -->
+                            <td>
+                            <select name="start" size="1" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            </td>
                         </tr>
                     </div>
 
                     <div class="form-group">
                         <tr>
-                            <td width="10%"><h4>Day:</h4></td>
-                            <td><input type="listbox" name="day" class="form-control"></td>
+                            <td width="10%"><h4>Length:</h4></td>
+                            <td><input type="listbox" name="length" class="form-control"></td>
                         </tr>
                     </div>
 
@@ -69,6 +90,7 @@
                 {{ form.as_p }}
                 <button class="btn btn-primary" type="submit" name="Add"/>Create</button>
             </form>
+           --?
 
     </div>
 
