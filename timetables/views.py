@@ -63,6 +63,10 @@ def board(request):    # default of pid is 1
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
 
+    course_new = Period.objects.all().order_by('-id')[:10]
+    course_hot = Period.objects.all().order_by('?')[:10]
+    course_recommend = Period.objects.all().order_by('?')[:10]
+
     current_user = request.user
 
     if not current_user.is_authenticated():
@@ -71,6 +75,9 @@ def board(request):    # default of pid is 1
         return HttpResponseRedirect('/users/auth_login')
     else:
         content = {
+            'course_new': course_new,
+            'course_hot': course_hot,
+            'course_recommend': course_recommend,
             'timetable_id': pid,
             'periods_array': objs,
             'username': current_user,

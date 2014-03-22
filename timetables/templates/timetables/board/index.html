@@ -17,7 +17,7 @@
         <table align='center' width=900 border = 1>
             <thead align='center'>
                 <tr>
-                    <td>PERIODS</td>
+                    <td>SESSIONS</td>
                     <td>MONDAY</td>
                     <td>TUESDAY</td>
                     <td>WEDNEDDAY</td>
@@ -71,8 +71,6 @@
     <center><a class="btn btn-sm btn-success" href="../periods/add/id={{timetable_id}}" role="button">Add new period</a></center>
 </div>
 {% endblock slide01 %}
-
-
 
 
     {% ifequal timetable_id "0" %}
@@ -148,3 +146,45 @@
         </table>
 
 
+{% block extra-table %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2><font color="#ff771c">NEW</font>RELEASE</h2>
+            <hr/>
+            {% for course in course_new %}
+            <table class="table-condensed">
+                <tr><h4><a href="../periods/pid={{course.id}}">{{ course.name }}</a></h4></tr>
+            </table>
+            <hr/>
+            <!--<hr class="featurette-divider"/>-->
+            {% endfor %}
+        </div>
+
+         <div class="col-md-4">
+            <h2><font color="#2ecc71">TREND</font></h2>
+            <hr/>
+            {% for course in course_hot %}
+                <table class="table-condensed">
+                <tr><h4><a href="../periods/pid={{course.id}}">{{ course.name }}</a></h4></tr>
+                </table>
+            <hr/>
+            <!--<hr class="featurette-divider"/>-->
+            {% endfor %}
+        </div>
+
+        <div class="col-md-4">
+            <h2><font color="#a349a4">COURSES</font>FORYOU</h2>
+            <hr/>
+            {% for course in course_recommend %}
+                <table class="table-condensed">
+                <tr><h4><a href="../periods/pid={{course.id}}">{{ course.name }}</a></h4></tr>
+                </table>
+            <hr/>
+            <!--<hr class="featurette-divider"/>-->
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock extra-table %}
