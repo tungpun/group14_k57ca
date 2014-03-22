@@ -28,7 +28,9 @@
     <link href="{{STATIC_URL}}css/css.css" rel="stylesheet" type="text/css">
 
 </head>
+{% block body-more %}
 <body>
+{% endblock body-more %}
      <div id="utter-wrapper" class="color-skin-1">
         {% block header %}
         <header id="header" class="header affix-top" data-spy="affix" data-offset-top="10">
@@ -54,6 +56,8 @@
                     </div>
                 </div>
             </div>
+            {% block header-more %}
+            {% endblock header-more %}
         </header>
         {% endblock header %}
         <!-- ===================================== -->
@@ -125,7 +129,7 @@
         <!-- JAVASCRIPT -->
         <!-- Placed At The End Of The Document So Page Loads Faster -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="{{STATIC_URL}}js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
      </div>

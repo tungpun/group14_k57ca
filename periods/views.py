@@ -78,7 +78,7 @@ def add(request, pid="0"):
 
     return render(
         request,
-        'periods/edit/index.html', {
+        'periods/add/index.html', {
             'form': form
         }
     )

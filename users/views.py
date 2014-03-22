@@ -7,6 +7,8 @@ from forms import LoginForm, RegisterForm
 
 
 def auth_login(request):
+    if request.user.is_authenticated():
+        return HttpResponseRedirect("../../")
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -16,13 +18,13 @@ def auth_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return HttpResponseRedirect('../../')
+                    return HttpResponseRedirect('../../users/gateway/do=2')
                     # Redirect to a success page.
                 else:
                     return HttpResponse("Disabled account!")
                     # Return a 'disabled account' error message
             else:
-                return HttpResponse("Invalid login.")
+                return HttpResponseRedirect('../../users/gateway/do=4')
                 # Return an 'invalid login' error message.
     form = LoginForm()
 
@@ -33,11 +35,13 @@ def auth_login(request):
 
 def auth_logout(request):
     logout(request)
-    return HttpResponse("Logout completed!")
+    return HttpResponseRedirect("../../users/gateway/do=3")
     # Redirect to a success page.
 
 
 def auth_register(request):
+    if request.user.is_authenticated():
+        return HttpResponseRedirect("../../")
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
@@ -57,16 +61,35 @@ def auth_register(request):
             if user is not None:
                 if user.is_active:
                     #login(request, user)
-                    return HttpResponse("Register completed.")
+                    return HttpResponseRedirect("../../users/gateway/do=1")
                     # Redirect to a success page.
                 else:
                     return HttpResponse("Disabled account!")
                     # Return a 'disabled account' error message
         else:
-            return HttpResponse("Invalid Input.")
+            return HttpResponseRedirect("../../users/gateway/do=4")
             # Return an 'invalid login' error message.
     form = RegisterForm()
 
     return render(request, 'users/auth_register/index.html', {
         'form': form
     })
+
+
+def gateway(request, pid="0"):
+    message = "Hacker detected!"
+    if pid == "1":      # Register
+        message = "Register completed. Have fun with Phoenix Store :x"
+    elif pid == "2":     # Login
+        message = "Login completed! Have fun with Phoenix Store :x"
+    elif pid == "3":      # Logout
+        message = "Have good journey. See you again ;)"
+    elif pid == "4":
+        message = "Invalid login."
+    return render(
+        request,
+        'users/gateway/index.html', {
+            'message': message,
+            'pid': pid
+        }
+    )
