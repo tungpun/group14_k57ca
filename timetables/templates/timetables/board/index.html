@@ -36,7 +36,7 @@
                         {% ifequal i period.per %}
                             {% ifequal j period.day %}
                                 {% ifnotequal period.name 0 %}
-                                    <td align="center"
+                                    <td align='center'
                                         {% for period in periods_array %}
                                             {% ifequal i period.per %}
                                                 {% ifequal j period.day %}
@@ -72,79 +72,60 @@
 </div>
 {% endblock slide01 %}
 
+{% block main-content %}
 
+        <!-- <div class="jumbotron"> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2><font color="#ff771c">RECOMMEND</font>COURSES</h2>
+                        <hr/>
+                                {% for period in courses_recommend %}
+                                    <li style="color: black">
+                                    <table class="table-condensed">
+                                        <tr><h4><a href="../periods/id={{period.id}}">{{ period.name }}</a></h4></tr>
+                                    </table>
+                                    </li>
+                                <hr/>
+                        <!--<hr class="featurette-divider"/>-->
+                                {% endfor %}
+                    </div>
 
+                     <div class="col-md-4">
+                        <h2><font color="#2ecc71">HOT</font>COURSES</h2>
+                        <hr/>
+                        {% for period in courses_hot %}
+                         <li style="color: black">
+                            <table class="table-condensed">
+                            <tr><h4><a href="../periods/id={{period.id}}">{{ period.name }}</a></h4></tr>
+                            </table>
+                         </li>
+                            <hr/>
+                        <!--<hr class="featurette-divider"/>-->
+                        {% endfor %}
+                    </div>
 
-    {% ifequal timetable_id "0" %}
-        <p align = 'center'>GOTO http://127.0.0.1:8000/timetables/id=...</p>
-    {% else %}
-        <p align = 'center'>School schedule :</p>
-        <br/>
-        <table align='center' width=900 border = 1>
-            <thead align='center'>
-                <tr>
-                    <td>Task</td>
-                    <td>Period 1</td>
-                    <td>Period 2</td>
-                    <td>Period 3</td>
-                    <td>Period 4</td>
-                    <td>Period 5</td>
-                    <td>Period 6</td>
-                    <td>Period 7</td>
-					<td>Period 8</td>
-					<td>Period 9</td>
-					<td>Period 10</td>
-                </tr>
-            </thead>
+                    <div class="col-md-4">
+                        <h2><font color="#a349a4">NEW</font>COURSES</h2>
+                        <hr/>
+                        {% for period in courses_new %}
+                        <li style="color: black">
+                            <table class="table-condensed">
+                            <tr><h4><a href="../periods/id={{period.id}}">{{ period.name }}</a></h4></tr>
+                            </table>
+                        </li>
+                            <hr/>
+                        <!--<hr class="featurette-divider"/>-->
+                        {% endfor %}
+                    </div>
 
-			<thead align='center'>
-                <tr>
-                    <td>Work</td>
-                    <td>07h00'~07h50'</td>
-                    <td>08h00'~08h50'</td>
-					<td>09h00'~09h50'</td>
-					<td>10h00'~10h50'</td>
-					<td>11h00'~11h50'</td>
-					<td>13h00'~13h50'</td>
-					<td>14h00'~14h50'</td>
-					<td>15h00'~15h50'</td>
-					<td>16h00'~16h50'</td>
-					<td>17h00'~17h50'</td>
-                </tr>
-            </thead>
+                </div>
+            </div>
+        <!-- </div> -->
+        <hr/>
 
-		   <thead align='center'>
-                <tr>
-                    <td>Rest</td>
-                    <td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-					<td>10 mins</td>
-                </tr>
-            </thead>
+    </div>
 
-			<thead align='center'>
-                <tr>
-                    <td>Day</td>
-                    <td>Morning</td>
-                    <td>Morning</td>
-					<td>Morning</td>
-					<td>Morning</td>
-					<td>Morning</td>
-					<td>Afternoon</td>
-					<td>Afternoon</td>
-					<td>Afternoon</td>
-					<td>Afternoon</td>
-					<td>Afternoon</td>
-                </tr>
-            </thead>
-    {% endifequal %}
-        </table>
+{% endblock main-content %}
 
 

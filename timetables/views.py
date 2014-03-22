@@ -36,6 +36,7 @@ def board(request):    # default of pid is 1
         return HttpResponseRedirect("/add")
 
     periods_array = Period.objects.filter(timetable_id=pid)
+
     for period in periods_array:
         objs.append(period)
 
@@ -63,6 +64,12 @@ def board(request):    # default of pid is 1
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
 
+    courses_recommend = Period.objects.all().order_by('?')[:5]
+    courses_new = Period.objects.all().order_by('-id')[:5]
+    courses_hot = Period.objects.all().order_by('?')[:5]
+
+
+
     current_user = request.user
 
     if not current_user.is_authenticated():
@@ -74,6 +81,9 @@ def board(request):    # default of pid is 1
             'timetable_id': pid,
             'periods_array': objs,
             'username': current_user,
+            'courses_recommend': courses_recommend,
+            'courses_hot': courses_hot,
+            'courses_new': courses_new,
         }
         return render(request, 'timetables/board/index.html', content)
 
