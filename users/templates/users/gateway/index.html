@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Gateway.....{% endblock title %}
+{% block carousel %}{% endblock carousel %}
+{% block navbar-menu %}{% endblock navbar-menu %}
+
+{% block body-more %}
+<body onload="Redirect()">
+{% endblock body-more %}
+
+{% block header-more %}
+<script type="text/javascript">
+    function Redirect() {
+        setTimeout(function()
+            {
+                console.log("");
+                {% ifequal pid "1" %}
+                window.location="../../";
+                {% else %}
+                window.location="{{ request.META.HTTP_REFERER }}";
+                {% endifequal %}
+            },
+            2000
+        );
+    }
+</script>
+{% endblock header-more %}
+
+
+<!-- document.write("You will be redirected to a new page in 5 seconds"); -->
+{% block main-content %}
+
+<div class="container">
+    <h4>
+        {{ message }}
+    </h4>
+        <hr/>
+        <p><i>You will be redirected to a new page in 2 seconds. If not, click
+             {% ifequal pid "1" %}
+                <a href="../../">here</a></i></p>
+             {% else %}
+                <a href="{{ request.META.HTTP_REFERER }}">here</a></i></p>
+             {% endifequal %}
+</div>
+
+
+
+{% endblock main-content %}
