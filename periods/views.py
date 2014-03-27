@@ -78,7 +78,8 @@ def get(request, pid='0'):
                     return HttpResponseRedirect('/')
                 else:
                     return HttpResponse("Can't get this subject")
-					
+
+
 def edit(request, pid="0"):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
