@@ -34,7 +34,8 @@ def detail(request, pid="0"):
         'periods': objs,
     }
     return render(request, 'periods/detail/index.html', content)
-    
+
+
 def get(request, pid='0'):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
@@ -64,9 +65,10 @@ def get(request, pid='0'):
                 j = pos
                 while j <= pos+leg-1:
                     if j > 70:
-                        return HttpResponse("Get Period Failed. Please choose another one!!!")
+                        return HttpResponseRedirect('/users/gateway/do=5')
                     if not free[j]:
-                        return HttpResponse("Get Period Failed. Please choose another one!!!")
+                        return HttpResponseRedirect('/users/gateway/do=5')
+                        #return HttpResponse("Get Period Failed. Please choose another one!!!")
                     else:
                         free[j] = False
                     j += 1

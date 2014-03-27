@@ -86,6 +86,8 @@ def gateway(request, pid="0"):
         message = "Have good journey. See you again ;)"
     elif pid == "4":
         message = "Invalid login."
+    elif pid == "5":
+        message = "Get Period Failed. Please choose another one!!!"
     return render(
         request,
         'users/gateway/index.html', {
