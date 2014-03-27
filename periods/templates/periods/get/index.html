@@ -1,16 +1,15 @@
 {% extends "base.html" %}
-{% block title %}Subject's detail | Time Machine {% endblock title %}
+{% block title %}Get subject | Time Machine {% endblock title %}
 {% block carousel %}
 {% endblock carousel %}
 {% block main-content %}
-    <div id="mylogin" class="navbar-collapse collapse edit-subject">
+    <div name="get" id="mylogin" class="navbar-collapse collapse">
         {% ifequal period_id "0" %}
             <p align = 'center'>GOTO http://127.0.0.1:8000/periods/id=...</p>
         {% else %}
             <p align = 'center'>Period Information {{ period_id }} :</p>
         {% endifequal %}
-            <br/>
-        {% for period in periods %}
+        <br/>
         <table align = 'center' width = 400 border = 2>
             <tbody>
                 <tr>
@@ -30,7 +29,7 @@
                     <td> {{ period.lecturer }} </td>
                 </tr>
                 <tr>
-                    <td>Postion</td>
+                    <td>Position</td>
                     <td> {{ period.position }} </td>
                 </tr>
                 <tr>
@@ -38,14 +37,13 @@
                       <td> {{ period.length }} </td>
                 </tr>
             </tbody>
-        {% endfor %}
+
         </table>
         <hr/>
-        <form method="get" action="edit/id={{period_id}}">
-        <div align="center"><button class="btn btn-success" method="get">Edit</button></div>
-        </form>
-        <form method="get" action="get/id={{period_id}}">
-        <div align="center"><button class="btn btn-success" method="get">Get</button></div>
+        <form action="" role="form" method="post">
+            {% csrf_token %}      <!-- Protection against Cross Site Request Forgeries -->
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit" name="submit" value="Save">Save</button>
         </form>
     </div>
 {% endblock main-content %}
