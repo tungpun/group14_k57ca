@@ -96,11 +96,15 @@ def edit(request, pid="0"):
                                                  length=form.cleaned_data['length'])
             return HttpResponseRedirect('/periods/id='+pid)           # Redirect after POST
         else:
-            return HttpResponse("Wrong Input! Try again, pls")
+            return HttpResponseRedirect('/users/gateway/do=6')
     else:
         form = EditPeriodForm()
+    period_obj = Period.objects.filter(id=pid)[0]
     return render(request, 'periods/edit/index.html', {
-        'form': form})
+        'form': form,
+        'period_obj': period_obj
+        }
+    )
 
 
 def add(request, pid="0"):
