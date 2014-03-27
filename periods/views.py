@@ -120,7 +120,7 @@ def add(request, pid="0"):
             new_period.save()
             return HttpResponseRedirect('/')           # Redirect after POST
         else:
-            return HttpResponse("Wrong Input! Try again, pls")
+            return HttpResponseRedirect('/users/gateway/do=6')
     else:
         form = EditPeriodForm()
 
