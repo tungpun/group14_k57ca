@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.contrib.auth import logout, authenticate, login
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.models import User
-
 from forms import LoginForm, RegisterForm
 
 
@@ -87,7 +86,7 @@ def gateway(request, pid="0"):
     elif pid == "4":
         message = "Invalid login."
     elif pid == "5":
-        message = "Get Period Failed. Please choose another one!!!"
+        message = "GET Period failed. Please choose another one!!!"
     elif pid == "6":
         message = "Wrong input. Try again!!!"
     return render(
