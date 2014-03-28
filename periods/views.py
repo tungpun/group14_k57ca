@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
+from django.contrib.auth.models import User
+from timetables.models import Timetable
 # Create your views here.
 
 from models import Period
