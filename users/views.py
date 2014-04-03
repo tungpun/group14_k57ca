@@ -78,9 +78,9 @@ def auth_register(request):
 def gateway(request, pid="0"):
     message = "Hacker detected!"
     if pid == "1":      # Register
-        message = "Register completed. Have fun with Phoenix Store :x"
+        message = "Register completed. Have fun with Time Machine :)"
     elif pid == "2":     # Login
-        message = "Login completed! Have fun with Phoenix Store :x"
+        message = "Login completed! Have fun with Time Machine :)"
     elif pid == "3":      # Logout
         message = "Have good journey. See you again ;)"
     elif pid == "4":

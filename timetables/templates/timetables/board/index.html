@@ -17,14 +17,14 @@
         <table align='center' width=900 border = 1>
             <thead align='center'>
                 <tr>
-                    <td>SESSIONS</td>
-                    <td>MONDAY</td>
-                    <td>TUESDAY</td>
-                    <td>WEDNEDDAY</td>
-                    <td>THURSDAY</td>
-                    <td>FRIDAY</td>
-                    <td>SATURDAY</td>
-                    <td>SUNDAY</td>
+                    <td width="10%">SESSION</td>
+                    <td>MON</td>
+                    <td>TUE</td>
+                    <td>WED</td>
+                    <td>THU</td>
+                    <td>FRI</td>
+                    <td>SAT</td>
+                    <td>SUN</td>
                 </tr>
             </thead>
             <tbody>
@@ -50,7 +50,7 @@
                                         {% for period in periods_array %}
                                             {% ifequal i period.per %}
                                                 {% ifequal j period.day %}
-                                                    <a href="../periods/id={{period.id}}">{{ period.code }}</a>
+                                                    <a href="../periods/id={{period.id}}">{{ period.name}}</a>
                                                 {% endifequal %}
                                             {% endifequal %}
                                         {% endfor %}
