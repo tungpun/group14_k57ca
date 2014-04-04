@@ -52,6 +52,7 @@ INSTALLED_APPS = (
     'timetables',
     'periods',
     'users',
+    'notifications'
 )
 
 MIDDLEWARE_CLASSES = (

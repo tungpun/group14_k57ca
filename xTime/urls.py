@@ -11,5 +11,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^periods/', include('periods.urls')),
     url(r'^users/', include('users.urls')),
+    url(r'^notifications/', include('notifications.urls')),
     url(r'^', include('timetables.urls')),
 )
