@@ -50,7 +50,7 @@
                                         {% for period in periods_array %}
                                             {% ifequal i period.per %}
                                                 {% ifequal j period.day %}
-                                                    <a href="../periods/id={{period.id}}">{{ period.code}}</a>
+                                                    <a href="../periods/id={{period.id}}">{{ period.name}}</a>
                                                 {% endifequal %}
                                             {% endifequal %}
                                         {% endfor %}
@@ -152,7 +152,7 @@
             <hr/>
             {% for course in course_new %}
             <table class="table-condensed">
-                <tr><h4><a href="../periods/id={{course.id}}">{{ course.name }}</a></h4></tr>
+                <tr><h4><li><a href="../periods/id={{course.id}}">{{ course.name }}</a></li></h4></tr>
             </table>
             <hr/>
             <!--<hr class="featurette-divider"/>-->
@@ -164,7 +164,7 @@
             <hr/>
             {% for course in course_hot %}
                 <table class="table-condensed">
-                <tr><h4><a href="../periods/id={{course.id}}">{{ course.name }}</a></h4></tr>
+                <tr><h4><li><a href="../periods/id={{course.id}}">{{ course.name }}</a></li></h4></tr>
                 </table>
             <hr/>
             <!--<hr class="featurette-divider"/>-->
@@ -176,7 +176,7 @@
             <hr/>
             {% for course in course_recommend %}
                 <table class="table-condensed">
-                <tr><h4><a href="../periods/id={{course.id}}">{{ course.name }}</a></h4></tr>
+                <tr><h4><li><a href="../periods/id={{course.id}}">{{ course.name }}</a></li></h4></tr>
                 </table>
             <hr/>
             <!--<hr class="featurette-divider"/>-->
