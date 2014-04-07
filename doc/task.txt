@@ -1,0 +1,12 @@
+So task e nghi ra cung kha kha roi, tuan sau ae bat dau chien dau nhe.
+Khong quyet liet ket qua se lang nhang :p
+.
++ Filter of periods
++ Notification System basis
++ Remove period
++ NotificationCount
++ NotificationList[5]
++ NotificationCount and NotificationList all page
++ Notification Realtime
++ Genre of periods
++ Change quote of the day
