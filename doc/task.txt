@@ -10,16 +10,4 @@ Khong quyet liet ket qua se lang nhang :p
 + Notification Realtime
 + Genre of periods
 + Change quote of the day
-
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Montserrat-Bold"), url("../fonts/montserrat-bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Glyphicons Halflings";
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
++ Make footer
