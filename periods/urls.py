@@ -8,4 +8,5 @@ urlpatterns = patterns('',
     url(r'^add/id=(?P<pid>\d+)$', views.add, name='add'),
     url(r'^id=(?P<pid>\d+)', views.detail, name='detail'),
     url(r'^enroll/id=(?P<pid>\d+)$', views.enroll, name='enroll'),
+    url(r'^remove/id=(?P<pid>\d+)$', views.remove, name='remove'),
 )

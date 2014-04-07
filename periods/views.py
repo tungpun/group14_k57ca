@@ -80,7 +80,13 @@ def enroll(request, pid='0'):
                                     timetable_id=tid)
                 new_period.save()
                 return HttpResponseRedirect('/')
+            
+def remove(request, pid="0"):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/users/auth_login')
 
+    Period.objects.filter(id=pid).delete()
+    return HttpResponseRedirect('/')
 
 def edit(request, pid="0"):
     if not request.user.is_authenticated():
