@@ -63,10 +63,15 @@ def board(request):    # default of pid is 1
 
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
+    def f(x):
+        for period in periods_array:
+            if x.code == period.code:
+                return False
+        return True
 
-    course_new = Period.objects.all().order_by('-id')[:5]
-    course_hot = Period.objects.all().order_by('?')[:5]
-    course_recommend = Period.objects.all().order_by('?')[:5]
+    course_new = filter(f,Period.objects.all().order_by('-id'))[:5]
+    course_hot = filter(f,Period.objects.all().order_by('?'))[:5]
+    course_recommend = filter(f,Period.objects.all().order_by('?'))[:5]
 
 
     current_user = request.user
