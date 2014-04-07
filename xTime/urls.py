@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic.base import TemplateView, RedirectView
 
 from django.contrib import admin
 admin.autodiscover()
@@ -13,4 +14,5 @@ urlpatterns = patterns('',
     url(r'^users/', include('users.urls')),
     url(r'^notifications/', include('notifications.urls')),
     url(r'^', include('timetables.urls')),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='../static/image/favi3.ico')),
 )
