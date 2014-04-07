@@ -7,5 +7,5 @@ urlpatterns = patterns('',
     url(r'^edit/id=(?P<pid>\d+)', views.edit, name='edit'),
     url(r'^add/id=(?P<pid>\d+)$', views.add, name='add'),
     url(r'^id=(?P<pid>\d+)', views.detail, name='detail'),
-    url(r'^get/id=(?P<pid>\d+)$', views.get, name='get'),
+    url(r'^enroll/id=(?P<pid>\d+)$', views.enroll, name='enroll'),
 )

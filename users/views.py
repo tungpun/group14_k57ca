@@ -86,7 +86,7 @@ def gateway(request, pid="0"):
     elif pid == "4":
         message = "Invalid login."
     elif pid == "5":
-        message = "GET Period failed. Please choose another one!!!"
+        message = "ENROLL Period failed. Please choose another one!!!"
     elif pid == "6":
         message = "Wrong input. Try again!!!"
     elif pid == "7":

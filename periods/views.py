@@ -36,7 +36,7 @@ def detail(request, pid="0"):
     return render(request, 'periods/detail/index.html', content)
 
 
-def get(request, pid='0'):
+def enroll(request, pid='0'):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
     if request.method == 'GET':
