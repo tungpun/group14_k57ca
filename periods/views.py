@@ -86,6 +86,10 @@ def edit(request, pid="0"):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
 
+    period_object= Period.objects.get(id=pid)
+    if not period_object.timetable.owner == request.user.id :
+        return HttpResponseRedirect('/users/gateway/do=7')
+
     if request.method == 'POST':            # if the form has been submitted...
         form = EditPeriodForm(request.POST)             # A form bound to the POST data
         if form.is_valid() and form.check_conflict(pid):          # All validation rules pass
