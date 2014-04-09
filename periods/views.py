@@ -84,7 +84,11 @@ def enroll(request, pid='0'):
 def remove(request, pid="0"):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
-
+    # Check permission
+    period_object= Period.objects.get(id=pid)
+    if not period_object.timetable.owner == request.user.id :
+        return HttpResponseRedirect('/users/gateway/do=8')
+    # Delete
     Period.objects.filter(id=pid).delete()
     return HttpResponseRedirect('/')
 

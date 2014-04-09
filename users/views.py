@@ -91,6 +91,8 @@ def gateway(request, pid="0"):
         message = "Wrong input. Try again!!!"
     elif pid == "7":
         message = "You have no right to edit this period!"
+    elif pid == "8":
+        message = "You have no right to remove this period!"
     return render(
         request,
         'users/gateway/index.html', {
