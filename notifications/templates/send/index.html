@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Send Notification | Time Machine {% endblock title %}
+{% block carousel %}
+{% endblock carousel %}
+{% block main-content %}
+
+        <div name="add" id="mylogin" class="navbar-collapse collapse">
+            <form action="" role="form" method="post">
+                {% csrf_token %}
+                <table>
+                <div name="edit" class="navbar-collapse collapse" >
+                    <div class="form-group">
+                        <tr>
+                            <td width="10%"><h4>Text:</h4></td>
+                            <td width="80%"><input type="text" name="text" class="form-control"></td>
+                        </tr>
+                    </div>
+                    <div class="form-group">
+                        <tr>
+                            <td width="10%"><h4>User ID:</h4></td>
+                            <td width="80%"><input type="text" name="userID" class="form-control"></td>
+                        </tr>
+                    </div>
+                    <div class="form-group">
+                        <tr>
+                            <td width="10%"><h4>New:</h4></td>
+                            <td><input type="checkbox" name="new" class="form-control"></td>
+                        </tr>
+                    </div>
+                </div>
+                </table>
+                <hr/>
+            <a href="notifications/" class="btn btn-success">Send</a>
+            </form>
+        </div>
+
