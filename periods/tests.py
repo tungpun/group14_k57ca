@@ -1,24 +1,38 @@
 from django.test import TestCase
 from periods.models import Period
-from periods.views import get, edit
+from periods.views import enroll, edit
 
-class test_Periods(TestCase):
+period1 = Period(code=2,
+                 name='SE',
+                 lecturer='TAH',
+                 length='3',
+                 position='50',)
+period2 = Period(code=3,
+                 name='OS',
+                 lecturer='NTT',
+                 length='3',
+                 position='20',)
+period3 = Period(code=2,
+                 name='SE',
+                 lecturer='TTMC',
+                 length='3',
+                 position='50',)
+period4 = Period(code=4,
+                 name='OS',
+                 lecturer='NTT',
+                 length='3',
+                 position='20',)
 
-    # Test function Period on models
-    def test_part_of_period(self):
-        code = 3
-        name = 'Kien truc may tinh'
-        lecturer = 'sonpb'
-        length = '5'
-        position = '31'
+class testPeriods(TestCase):
 
-        period = Period(code=code,
-                         name=name,
-                         lecturer=lecturer,
-                         length=length,
-                         position=position,)
+    def testSamePeriodShouldBeEqual(self):
+        self.assertTrue(period1.equal(period1))
 
-        self.assertEqual(period.name, name)
-        self.assertEqual(period.lecturer, lecturer)
-        self.assertEqual(period.position, position)
-        self.assertEqual(period.length, length)
+    def testDiffirentPeriodShouldNotBeEqual(self):
+        self.assertFalse(period1.equal(period2))
+
+    def testDiffirentLecturerShouldNotBeEqual(self):
+        self.assertFalse(period1.equal(period3))
+
+    def testDiffirentCodeShouldNotBeEqual(self):
+        self.assertFalse(period2.equal(period4))
