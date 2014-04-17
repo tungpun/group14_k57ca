@@ -34,6 +34,13 @@ ORDER_CHOICES = (
     (9, '9'),
     (10, '10'),
 )
+TYPEPERIOD_CHOICES = (
+    (1, 'Science'),
+    (2, 'Technology'),
+    (3, 'Art'),
+    (4, 'Economic'),
+    (5, 'Others'),
+)
 
 
 class EditPeriodForm(forms.Form):
@@ -49,6 +56,11 @@ class EditPeriodForm(forms.Form):
         choices=ORDER_CHOICES,
     )
     length = forms.IntegerField()
+
+    period_type = forms.ChoiceField(
+        widget=forms.Select,
+        choices=TYPEPERIOD_CHOICES,
+    )
 
     def check_conflict(self, pid):
         periods_array = Period.objects.filter(timetable_id=pid)

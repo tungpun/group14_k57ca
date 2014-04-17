@@ -74,6 +74,7 @@ def enroll(request, pid='0'):
                     j += 1
                 new_period = Period(code=periods.code,
                                     name=periods.name,
+                                    period_type=periods.period_type,
                                     lecturer=periods.lecturer,
                                     position=periods.position,
                                     length=periods.length,
@@ -105,6 +106,7 @@ def edit(request, pid="0"):
         if form.is_valid() and form.check_conflict(pid):          # All validation rules pass
             Period.objects.filter(id=pid).update(code=form.cleaned_data['code'],
                                                  name=form.cleaned_data['name'],
+                                                 period_type = form.cleaned_data['period_type'],
                                                  lecturer=form.cleaned_data['lecturer'],
                                                  position=(int(form.cleaned_data['day']) - 1) * 10 + int(form.cleaned_data['start']),
                                                  length=form.cleaned_data['length'])

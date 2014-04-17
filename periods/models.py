@@ -36,6 +36,13 @@ ORDER_CHOICES = (
     (10, '10'),
 )
 
+TYPEPERIOD_CHOICES = (
+    (1, 'Science'),
+    (2, 'Technology'),
+    (3, 'Art'),
+    (4, 'Economic'),
+    (5, 'Others'),
+)
 
 class Period(models.Model):
     code = models.CharField(max_length=10)
@@ -44,5 +51,5 @@ class Period(models.Model):
     length = models.IntegerField(max_length=2)
     timetable = models.ForeignKey(Timetable)
     position = models.IntegerField(max_length=2)
-
+    period_type = models.CharField(max_length= 30)
 
