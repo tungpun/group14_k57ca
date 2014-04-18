@@ -1,5 +1,7 @@
 from django.test import TestCase
+from periods.forms import EditPeriodForm
 from periods.models import Period
+#from django.utils.unittest import *
 from periods.views import enroll, edit
 
 period1 = Period(code=2,
@@ -23,16 +25,47 @@ period4 = Period(code=4,
                  length='3',
                  position='20',)
 
-class testPeriods(TestCase):
+def compareTwoPeriods(p1 = Period, p2 = Period):
+        if p1.code != p2.code:
+            return False
+        if p1.name != p2.name:
+            return False
+        if p1.lecturer != p2.lecturer:
+            return False
+        if p1.position != p2.position:
+            return False
+        return True
+
+class testPeriodsModels(TestCase):
+
+    def testPeriodIsValid(self):
+        self.assertTrue(isinstance(period1, Period))
+        self.assertTrue(isinstance(period2, Period))
+        self.assertTrue(isinstance(period3, Period))
+        self.assertTrue(isinstance(period4, Period))
 
     def testSamePeriodShouldBeEqual(self):
-        self.assertTrue(period1.equal(period1))
+        self.assertTrue(compareTwoPeriods(period1,period1))
 
     def testDiffirentPeriodShouldNotBeEqual(self):
-        self.assertFalse(period1.equal(period2))
+        self.assertFalse(compareTwoPeriods(period1,period2))
 
     def testDiffirentLecturerShouldNotBeEqual(self):
-        self.assertFalse(period1.equal(period3))
+        self.assertFalse(compareTwoPeriods(period1,period3))
 
     def testDiffirentCodeShouldNotBeEqual(self):
-        self.assertFalse(period2.equal(period4))
+        self.assertFalse(compareTwoPeriods(period2,period4))
+
+class testPeriodsForms(TestCase):
+
+    def testValidForm(self):
+        content = {
+            'code':period1.code,
+            'name':period1.name,
+            'lecturer':period1.lecturer,
+            'length':period1.length,
+            'position':period1.position,
+        }
+        form = EditPeriodForm(data=content)
+        self.assertFalse(form.is_valid())
+
