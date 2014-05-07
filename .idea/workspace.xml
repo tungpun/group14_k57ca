@@ -27,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="295" selection-start="8854" selection-end="8854" vertical-scroll-proportion="-8.346154" vertical-offset="2673" max-vertical-offset="3638">
+            <state line="170" column="295" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.496337" vertical-offset="2619" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="8" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.6976744" vertical-offset="834" max-vertical-offset="3349">
+            <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="-15.0" vertical-offset="834" max-vertical-offset="3349">
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
         <option value="$PROJECT_DIR$/periods/tests.py" />
         <option value="$PROJECT_DIR$/notifications/tests.py" />
         <option value="$PROJECT_DIR$/periods/views.py" />
-        <option value="$PROJECT_DIR$/template/base.html" />
         <option value="$PROJECT_DIR$/timetables/templates/timetables/board/index.html" />
+        <option value="$PROJECT_DIR$/template/base.html" />
       </list>
     </option>
   </component>
@@ -550,16 +550,16 @@
         <state line="71" column="0" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.8625" vertical-offset="690" max-vertical-offset="1275" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/base.html">
+    <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="295" selection-start="8854" selection-end="8854" vertical-scroll-proportion="-8.346154" vertical-offset="2673" max-vertical-offset="3638">
+        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="-15.0" vertical-offset="834" max-vertical-offset="3349">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
+    <entry file="file://$PROJECT_DIR$/template/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="8" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.6976744" vertical-offset="834" max-vertical-offset="3349">
+        <state line="170" column="295" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.496337" vertical-offset="2619" max-vertical-offset="3638">
           <folding />
         </state>
       </provider>
