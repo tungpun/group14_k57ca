@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e0d81a6-b295-46c3-8297-a42b7a4a39aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/base.html" afterPath="$PROJECT_DIR$/template/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/templates/timetables/board/index.html" afterPath="$PROJECT_DIR$/timetables/templates/timetables/board/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Timetable.iws" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="295" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.496337" vertical-offset="2619" max-vertical-offset="3638">
+            <state line="168" column="175" selection-start="8539" selection-end="8539" vertical-scroll-proportion="0.35897437" vertical-offset="2660" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -559,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="295" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.496337" vertical-offset="2619" max-vertical-offset="3638">
+        <state line="168" column="175" selection-start="8539" selection-end="8539" vertical-scroll-proportion="0.35897437" vertical-offset="2660" max-vertical-offset="3638">
           <folding />
         </state>
       </provider>
