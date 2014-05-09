@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e0d81a6-b295-46c3-8297-a42b7a4a39aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/base.html" afterPath="$PROJECT_DIR$/template/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Timetable.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,16 @@
       <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="7" selection-start="11136" selection-end="11136" vertical-scroll-proportion="0.93772894" vertical-offset="3211" max-vertical-offset="3825">
+            <state line="172" column="81" selection-start="8807" selection-end="8807" vertical-scroll-proportion="0.64285713" vertical-offset="2573" max-vertical-offset="3791">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/periods/templates/periods/detail/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-3.1923077" vertical-offset="410" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -37,7 +47,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="-15.0" vertical-offset="834" max-vertical-offset="3349">
+            <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="3349">
               <folding />
             </state>
           </provider>
@@ -112,6 +122,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,9 +217,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group14_k57ca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group14_k57ca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group14_k57ca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group14_k57ca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group14_k57ca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group14_k57ca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="periods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,11 +560,6 @@
         <state line="37" column="37" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.34" vertical-offset="510" max-vertical-offset="2074" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/periods/templates/periods/detail/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.14847943" vertical-offset="410" max-vertical-offset="969" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/periods/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="50" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-17.96" vertical-offset="452" max-vertical-offset="1037" />
@@ -550,14 +617,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="-15.0" vertical-offset="834" max-vertical-offset="3349">
+        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="3349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/periods/templates/periods/detail/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-3.1923077" vertical-offset="410" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="7" selection-start="11136" selection-end="11136" vertical-scroll-proportion="0.93772894" vertical-offset="3211" max-vertical-offset="3825">
+        <state line="172" column="81" selection-start="8807" selection-end="8807" vertical-scroll-proportion="0.64285713" vertical-offset="2573" max-vertical-offset="3791">
           <folding />
         </state>
       </provider>
