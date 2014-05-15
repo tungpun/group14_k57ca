@@ -12,14 +12,14 @@ NOTIFICATION4 = Notification(text='Bonjour',
                              new=False, )
 
 
-def compare_notifications(n1=Notification, n2=Notification):
+def compare_notifications(self=Notification, other=Notification):
     """
     If 2 notifications have the same text, they are equal (return TRUE)
     Otherwise, they are different (return FALSE)
     """
-    if n1.text != n2.text:
+    if self.text != other.text:
         return False
-    if n1.new != n2.new:
+    if self.new != other.new:
         return False
     return True
 

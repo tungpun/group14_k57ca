@@ -1,3 +1,5 @@
+# pylint: disable=no-member, unexpected-keyword-arg, too-many-public-methods,
+# pylint: disable=too-few-public-methods, import-error, relative-import
 """Views implement here"""
 from django.shortcuts import render
 from forms import GetNotification

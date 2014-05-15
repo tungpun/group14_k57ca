@@ -1,0 +1,329 @@
+************* Module xTime
+C:  1, 0: Invalid module name "xTime" (invalid-name)
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.notifications
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.notifications.forms
+R:  6, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.notifications.admin
+W:  3, 0: Relative import 'models', should be 'xTime.notifications.models' (relative-import)
+************* Module xTime.notifications.urls
+C:  8, 0: Line too long (85/80) (line-too-long)
+W:  4, 0: Relative import 'views', should be 'xTime.notifications.views' (relative-import)
+************* Module xTime.notifications.tests
+F:  3, 0: Unable to import 'notifications.models' (import-error)
+C: 36, 4: Invalid method name "test_same_notification_should_be_equal" (invalid-name)
+C: 40, 4: Invalid method name "test_different_notification_should_not_be_equal" (invalid-name)
+C: 44, 4: Invalid method name "test_different_text_should_not_be_equal" (invalid-name)
+C: 48, 4: Invalid method name "test_different_new_should_not_be_equal" (invalid-name)
+R: 27, 0: Too many public methods (70/20) (too-many-public-methods)
+************* Module xTime.notifications.views
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Locally disabling too-few-public-methods (R0903) (locally-disabled)
+I:  2, 0: Locally disabling import-error (F0401) (locally-disabled)
+I:  2, 0: Locally disabling relative-import (W0403) (locally-disabled)
+************* Module xTime.periods
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.periods.admin
+W:  6, 0: Relative import 'models', should be 'xTime.periods.models' (relative-import)
+************* Module xTime.periods.urls
+C: 11, 0: Line too long (85/80) (line-too-long)
+C: 12, 0: Line too long (86/80) (line-too-long)
+W:  4, 0: Relative import 'views', should be 'xTime.periods.views' (relative-import)
+************* Module xTime.periods.models
+F:  5, 0: Unable to import 'timetables.models' (import-error)
+************* Module xTime.periods.tests
+F:  3, 0: Unable to import 'periods.forms' (import-error)
+F:  4, 0: Unable to import 'periods.models' (import-error)
+C: 29, 0: Invalid argument name "p1" (invalid-name)
+C: 29, 0: Invalid argument name "p2" (invalid-name)
+C: 54, 4: Invalid method name "test_same_period_should_be_equal" (invalid-name)
+C: 58, 4: Invalid method name "test_different_period_should_not_be_equal" (invalid-name)
+C: 62, 4: Invalid method name "test_different_lecturer_should_not_be_equal" (invalid-name)
+C: 66, 4: Invalid method name "test_different_code_should_not_be_equal" (invalid-name)
+R: 45, 0: Too many public methods (70/20) (too-many-public-methods)
+R: 71, 0: Too many public methods (66/20) (too-many-public-methods)
+************* Module xTime.periods.forms
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Unable to consider inline option 'too-few-public-methods, import-error, relative-import' (bad-inline-option)
+F:  6, 0: Unable to import 'periods.models' (import-error)
+C: 77,12: Invalid variable name "f" (invalid-name)
+C: 78,12: Invalid variable name "f" (invalid-name)
+W: 77,12: Unused variable 'f' (unused-variable)
+************* Module xTime.periods.views
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Unable to consider inline option 'too-few-public-methods, import-error, relative-import' (bad-inline-option)
+C:118, 0: Line too long (94/80) (line-too-long)
+C:119, 0: Line too long (88/80) (line-too-long)
+C:120, 0: Line too long (127/80) (line-too-long)
+C:121, 0: Line too long (84/80) (line-too-long)
+C:146, 0: Line too long (94/80) (line-too-long)
+F:  7, 0: Unable to import 'timetables.models' (import-error)
+W: 10, 0: Relative import 'models', should be 'xTime.periods.models' (relative-import)
+W: 11, 0: Relative import 'forms', should be 'xTime.periods.forms' (relative-import)
+C: 62,12: Invalid variable name "f" (invalid-name)
+C: 63,12: Invalid variable name "f" (invalid-name)
+C: 64,12: Invalid variable name "p" (invalid-name)
+W: 62,12: Unused variable 'f' (unused-variable)
+************* Module xTime.timetables
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.timetables.forms
+R:  5, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.timetables.urls
+W:  4, 0: Relative import 'views', should be 'xTime.timetables.views' (relative-import)
+************* Module xTime.timetables.admin
+W:  6, 0: Relative import 'models', should be 'xTime.timetables.models' (relative-import)
+************* Module xTime.timetables.tests
+F:  3, 0: Unable to import 'timetables.models' (import-error)
+F:  4, 0: Unable to import 'timetables.forms' (import-error)
+C: 17, 0: Invalid argument name "t1" (invalid-name)
+C: 17, 0: Invalid argument name "t2" (invalid-name)
+C: 35, 4: Invalid method name "test_same_period_should_be_equal" (invalid-name)
+C: 39, 4: Invalid method name "test_different_period_should_not_be_equal" (invalid-name)
+C: 43, 4: Invalid method name "test_different_semester_should_not_be_equal" (invalid-name)
+C: 47, 4: Invalid method name "test_different_code_should_not_be_equal" (invalid-name)
+R: 26, 0: Too many public methods (70/20) (too-many-public-methods)
+R: 52, 0: Too many public methods (66/20) (too-many-public-methods)
+************* Module xTime.timetables.views
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Unable to consider inline option 'too-few-public-methods, import-error, relative-import' (bad-inline-option)
+C: 80, 0: Line too long (84/80) (line-too-long)
+W: 10, 0: Relative import 'models', should be 'xTime.timetables.models' (relative-import)
+F: 11, 0: Unable to import 'periods.models' (import-error)
+W: 12, 0: Relative import 'forms', should be 'xTime.timetables.forms' (relative-import)
+R: 26, 0: Too many local variables (16/15) (too-many-locals)
+C: 71, 4: Invalid argument name "x" (invalid-name)
+C: 73,12: Invalid variable name "p" (invalid-name)
+W: 78,17: Used builtin function 'filter' (bad-builtin)
+W: 79,17: Used builtin function 'filter' (bad-builtin)
+W: 80,23: Used builtin function 'filter' (bad-builtin)
+R: 26, 0: Too many branches (18/12) (too-many-branches)
+************* Module xTime.users
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.users.forms
+R:  6, 0: Too few public methods (1/2) (too-few-public-methods)
+R: 12, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.users.urls
+C:  7, 0: Line too long (84/80) (line-too-long)
+C:  8, 0: Line too long (81/80) (line-too-long)
+C:  9, 0: Line too long (90/80) (line-too-long)
+C: 10, 0: Line too long (88/80) (line-too-long)
+W:  4, 0: Relative import 'views', should be 'xTime.users.views' (relative-import)
+************* Module xTime.users.tests
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Unable to consider inline option 'too-few-public-methods, import-error, relative-import' (bad-inline-option)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  5, 0: Wildcard import users.forms (wildcard-import)
+F:  5, 0: Unable to import 'users.forms' (import-error)
+C: 18, 0: Invalid argument name "u1" (invalid-name)
+C: 18, 0: Invalid argument name "u2" (invalid-name)
+C: 42, 4: Invalid method name "test_different_user_should_not_be_equal" (invalid-name)
+C: 46, 4: Invalid method name "test_different_username_should_not_be_equal" (invalid-name)
+C: 50, 4: Invalid method name "test_different_password_should_not_be_equal" (invalid-name)
+E: 63,15: Undefined variable 'LoginForm' (undefined-variable)
+E: 80,15: Undefined variable 'RegisterForm' (undefined-variable)
+************* Module xTime.users.views
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Unable to consider inline option 'too-few-public-methods, import-error, relative-import' (bad-inline-option)
+W:  8, 0: Relative import 'forms', should be 'xTime.users.forms' (relative-import)
+************* Module xTime.xTime
+C:  1, 0: Invalid module name "xTime" (invalid-name)
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.xTime.urls
+C: 14, 0: Line too long (102/80) (line-too-long)
+R:  1, 0: Similar lines in 2 files
+==xTime.periods.forms:82
+==xTime.periods.views:67
+                if (j > 0) and (j < 71):
+                    free[j] = False
+                j += 1
+        j = pos
+        while j <= pos+leg-1:
+            if j > 70: (duplicate-code)
+
+
+Report
+======
+515 statements analysed.
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |51     |51       |=          |
++-----------+-------+---------+-----------+
+|refactor   |12     |12       |=          |
++-----------+-------+---------+-----------+
+|warning    |18     |18       |=          |
++-----------+-------+---------+-----------+
+|error      |2      |2        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++--------------------------+-------+--------+---------+-----------+
+|module                    |error  |warning |refactor |convention |
++==========================+=======+========+=========+===========+
+|xTime.users.tests         |100.00 |5.56    |0.00     |11.76      |
++--------------------------+-------+--------+---------+-----------+
+|xTime.timetables.views    |0.00   |27.78   |16.67    |5.88       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.periods.views       |0.00   |16.67   |0.00     |15.69      |
++--------------------------+-------+--------+---------+-----------+
+|xTime.users.urls          |0.00   |5.56    |0.00     |7.84       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.periods.urls        |0.00   |5.56    |0.00     |3.92       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.periods.forms       |0.00   |5.56    |0.00     |3.92       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.notifications.urls  |0.00   |5.56    |0.00     |1.96       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.users.views         |0.00   |5.56    |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.timetables.urls     |0.00   |5.56    |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.timetables.admin    |0.00   |5.56    |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.periods.admin       |0.00   |5.56    |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.notifications.admin |0.00   |5.56    |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|invalid-name            |30          |
++------------------------+------------+
+|locally-disabled        |21          |
++------------------------+------------+
+|line-too-long           |14          |
++------------------------+------------+
+|relative-import         |12          |
++------------------------+------------+
+|import-error            |10          |
++------------------------+------------+
+|missing-docstring       |7           |
++------------------------+------------+
+|too-many-public-methods |5           |
++------------------------+------------+
+|bad-inline-option       |5           |
++------------------------+------------+
+|too-few-public-methods  |4           |
++------------------------+------------+
+|bad-builtin             |3           |
++------------------------+------------+
+|unused-variable         |2           |
++------------------------+------------+
+|undefined-variable      |2           |
++------------------------+------------+
+|wildcard-import         |1           |
++------------------------+------------+
+|too-many-locals         |1           |
++------------------------+------------+
+|too-many-branches       |1           |
++------------------------+------------+
+|duplicate-code          |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.23/10 (previous run: 8.23/10, +0.00)
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |6     |6        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.548 |0.548    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+External dependencies
+---------------------
+::
+
+    django 
+      \-conf 
+      | \-urls (xTime.timetables.urls,xTime.users.urls,xTime.xTime.urls,xTime.periods.urls,xTime.notifications.urls)
+      \-contrib 
+      | \-admin (xTime.timetables.admin,xTime.periods.admin,xTime.xTime.urls,xTime.notifications.admin)
+      | \-auth (xTime.users.views)
+      |   \-models (xTime.users.views,xTime.notifications.models,xTime.notifications.forms,xTime.users.tests)
+      \-core 
+      | \-management (xTime.manage)
+      | \-wsgi (xTime.xTime.wsgi)
+      \-db 
+      | \-models (xTime.notifications.models,xTime.timetables.models,xTime.periods.models)
+      \-forms (xTime.timetables.forms,xTime.notifications.forms,xTime.periods.forms,xTime.users.forms)
+      \-http (xTime.users.views,xTime.periods.views,xTime.notifications.views,xTime.timetables.views)
+      \-shortcuts (xTime.users.views,xTime.periods.views,xTime.notifications.views,xTime.timetables.views)
+      \-test (xTime.timetables.tests,xTime.periods.tests,xTime.notifications.tests,xTime.users.tests)
+      \-views 
+        \-generic 
+          \-base (xTime.xTime.urls)
+    os (xTime.xTime.settings,xTime.xTime.wsgi,xTime.manage)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |685    |68.43 |685      |=          |
++----------+-------+------+---------+-----------+
+|docstring |171    |17.08 |171      |=          |
++----------+-------+------+---------+-----------+
+|comment   |42     |4.20  |42       |=          |
++----------+-------+------+---------+-----------+
+|empty     |103    |10.29 |103      |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |34     |34         |=          |79.41       |5.88     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |15     |15         |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |25     |25         |=          |100.00      |60.00    |
++---------+-------+-----------+-----------+------------+---------+
+|function |19     |19         |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+

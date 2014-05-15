@@ -1,3 +1,5 @@
+# pylint: disable=no-member, unexpected-keyword-arg, too-many-public-methods,
+# pylint: too-few-public-methods, import-error, relative-import
 """Forms create here"""
 
 from django import forms

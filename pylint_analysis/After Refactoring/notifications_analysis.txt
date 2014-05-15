@@ -2,23 +2,6 @@
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module xTime.notifications.forms
 R:  6, 0: Too few public methods (1/2) (too-few-public-methods)
-************* Module xTime.notifications.views
-W:  3, 0: Relative import 'forms', should be 'xTime.notifications.forms' (relative-import)
-W:  5, 0: Relative import 'models', should be 'xTime.notifications.models' (relative-import)
-E: 15,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
-E: 15,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
-E: 16,11: Instance of 'GetNotification' has no 'is_valid' member (no-member)
-E: 17,23: Unexpected keyword argument 'text' in constructor call (unexpected-keyword-arg)
-E: 17,23: Unexpected keyword argument 'userID' in constructor call (unexpected-keyword-arg)
-E: 17,23: Unexpected keyword argument 'new' in constructor call (unexpected-keyword-arg)
-E: 17,23: No value for argument 'name' in constructor call (no-value-for-parameter)
-E: 17,23: No value for argument 'bases' in constructor call (no-value-for-parameter)
-E: 17,23: No value for argument 'attrs' in constructor call (no-value-for-parameter)
-E: 17,41: Instance of 'GetNotification' has no 'cleaned_data' member (no-member)
-E: 18,43: Instance of 'GetNotification' has no 'cleaned_data' member (no-member)
-E: 25,15: No value for argument 'name' in constructor call (no-value-for-parameter)
-E: 25,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
-E: 25,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
 ************* Module xTime.notifications.admin
 W:  3, 0: Relative import 'models', should be 'xTime.notifications.models' (relative-import)
 ************* Module xTime.notifications.urls
@@ -26,13 +9,18 @@ C:  8, 0: Line too long (85/80) (line-too-long)
 W:  4, 0: Relative import 'views', should be 'xTime.notifications.views' (relative-import)
 ************* Module xTime.notifications.tests
 F:  3, 0: Unable to import 'notifications.models' (import-error)
-C: 15, 0: Invalid argument name "n1" (invalid-name)
-C: 15, 0: Invalid argument name "n2" (invalid-name)
 C: 36, 4: Invalid method name "test_same_notification_should_be_equal" (invalid-name)
 C: 40, 4: Invalid method name "test_different_notification_should_not_be_equal" (invalid-name)
 C: 44, 4: Invalid method name "test_different_text_should_not_be_equal" (invalid-name)
 C: 48, 4: Invalid method name "test_different_new_should_not_be_equal" (invalid-name)
 R: 27, 0: Too many public methods (70/20) (too-many-public-methods)
+************* Module xTime.notifications.views
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Locally disabling too-few-public-methods (R0903) (locally-disabled)
+I:  2, 0: Locally disabling import-error (F0401) (locally-disabled)
+I:  2, 0: Locally disabling relative-import (W0403) (locally-disabled)
 
 
 Report
@@ -78,81 +66,16 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |72     |66.67 |73       |-1.00      |
+|code      |72     |65.45 |72       |=          |
 +----------+-------+------+---------+-----------+
-|docstring |20     |18.52 |9        |+11.00     |
+|docstring |20     |18.18 |20       |=          |
 +----------+-------+------+---------+-----------+
-|comment   |0      |0.00  |1        |-1.00      |
+|comment   |2      |1.82  |0        |+2.00      |
 +----------+-------+------+---------+-----------+
-|empty     |16     |14.81 |14       |+2.00      |
+|empty     |16     |14.55 |16       |=          |
 +----------+-------+------+---------+-----------+
 
 
-
-Messages by category
---------------------
-
-+-----------+-------+---------+-----------+
-|type       |number |previous |difference |
-+===========+=======+=========+===========+
-|convention |8      |23       |-15.00     |
-+-----------+-------+---------+-----------+
-|refactor   |2      |2        |=          |
-+-----------+-------+---------+-----------+
-|warning    |4      |4        |=          |
-+-----------+-------+---------+-----------+
-|error      |14     |14       |=          |
-+-----------+-------+---------+-----------+
-
-
-
-% errors / warnings by module
------------------------------
-
-+--------------------------+-------+--------+---------+-----------+
-|module                    |error  |warning |refactor |convention |
-+==========================+=======+========+=========+===========+
-|xTime.notifications.views |100.00 |50.00   |0.00     |0.00       |
-+--------------------------+-------+--------+---------+-----------+
-|xTime.notifications.urls  |0.00   |25.00   |0.00     |12.50      |
-+--------------------------+-------+--------+---------+-----------+
-|xTime.notifications.admin |0.00   |25.00   |0.00     |0.00       |
-+--------------------------+-------+--------+---------+-----------+
-
-
-
-Messages
---------
-
-+------------------------+------------+
-|message id              |occurrences |
-+========================+============+
-|no-value-for-parameter  |8           |
-+------------------------+------------+
-|invalid-name            |6           |
-+------------------------+------------+
-|relative-import         |4           |
-+------------------------+------------+
-|unexpected-keyword-arg  |3           |
-+------------------------+------------+
-|no-member               |3           |
-+------------------------+------------+
-|too-many-public-methods |1           |
-+------------------------+------------+
-|too-few-public-methods  |1           |
-+------------------------+------------+
-|missing-docstring       |1           |
-+------------------------+------------+
-|line-too-long           |1           |
-+------------------------+------------+
-|import-error            |1           |
-+------------------------+------------+
-
-
-
-Global evaluation
------------------
-Your code has been rated at -3.77/10 (previous run: -6.23/10, +2.46)
 
 Statistics by type
 ------------------
@@ -170,4 +93,63 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 
 
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |6      |8        |-2.00      |
++-----------+-------+---------+-----------+
+|refactor   |2      |2        |=          |
++-----------+-------+---------+-----------+
+|warning    |2      |4        |-2.00      |
++-----------+-------+---------+-----------+
+|error      |0      |14       |-14.00     |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++--------------------------+------+--------+---------+-----------+
+|module                    |error |warning |refactor |convention |
++==========================+======+========+=========+===========+
+|xTime.notifications.urls  |0.00  |50.00   |0.00     |16.67      |
++--------------------------+------+--------+---------+-----------+
+|xTime.notifications.admin |0.00  |50.00   |0.00     |0.00       |
++--------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|locally-disabled        |6           |
++------------------------+------------+
+|invalid-name            |4           |
++------------------------+------------+
+|relative-import         |2           |
++------------------------+------------+
+|too-many-public-methods |1           |
++------------------------+------------+
+|too-few-public-methods  |1           |
++------------------------+------------+
+|missing-docstring       |1           |
++------------------------+------------+
+|line-too-long           |1           |
++------------------------+------------+
+|import-error            |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.36/10 (previous run: -3.77/10, +12.13)
 

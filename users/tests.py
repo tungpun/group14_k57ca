@@ -1,3 +1,5 @@
+# pylint: disable=no-member, unexpected-keyword-arg, too-many-public-methods,
+# pylint: too-few-public-methods, import-error, relative-import
 from django.test import TestCase
 from django.contrib.auth.models import User
 from users.forms import *

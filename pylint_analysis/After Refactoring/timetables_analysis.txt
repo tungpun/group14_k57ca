@@ -18,35 +18,95 @@ C: 47, 4: Invalid method name "test_different_code_should_not_be_equal" (invalid
 R: 26, 0: Too many public methods (70/20) (too-many-public-methods)
 R: 52, 0: Too many public methods (66/20) (too-many-public-methods)
 ************* Module xTime.timetables.views
-C: 78, 0: Line too long (84/80) (line-too-long)
-W:  8, 0: Relative import 'models', should be 'xTime.timetables.models' (relative-import)
-F:  9, 0: Unable to import 'periods.models' (import-error)
-W: 10, 0: Relative import 'forms', should be 'xTime.timetables.forms' (relative-import)
-R: 24, 0: Too many local variables (16/15) (too-many-locals)
-E: 33,14: Class 'Timetable' has no 'objects' member (no-member)
-C: 69, 4: Invalid argument name "x" (invalid-name)
-C: 71,12: Invalid variable name "p" (invalid-name)
-W: 76,17: Used builtin function 'filter' (bad-builtin)
-W: 77,17: Used builtin function 'filter' (bad-builtin)
-W: 78,23: Used builtin function 'filter' (bad-builtin)
-R: 24, 0: Too many branches (18/12) (too-many-branches)
-E:105,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
-E:105,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
-E:110,15: Instance of 'InsertTimetableForm' has no 'is_valid' member (no-member)
-E:111,32: Unexpected keyword argument 'owner' in constructor call (unexpected-keyword-arg)
-E:111,32: Unexpected keyword argument 'code' in constructor call (unexpected-keyword-arg)
-E:111,32: No value for argument 'bases' in constructor call (no-value-for-parameter)
-E:111,32: No value for argument 'attrs' in constructor call (no-value-for-parameter)
-E:112,25: Instance of 'InsertTimetableForm' has no 'cleaned_data' member (no-member)
-E:113,25: Instance of 'InsertTimetableForm' has no 'cleaned_data' member (no-member)
-E:119,15: No value for argument 'name' in constructor call (no-value-for-parameter)
-E:119,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
-E:119,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+I:  1, 0: Locally disabling no-member (E1101) (locally-disabled)
+I:  1, 0: Locally disabling unexpected-keyword-arg (E1123) (locally-disabled)
+I:  1, 0: Locally disabling too-many-public-methods (R0904) (locally-disabled)
+I:  2, 0: Unable to consider inline option 'too-few-public-methods, import-error, relative-import' (bad-inline-option)
+C: 80, 0: Line too long (84/80) (line-too-long)
+W: 10, 0: Relative import 'models', should be 'xTime.timetables.models' (relative-import)
+F: 11, 0: Unable to import 'periods.models' (import-error)
+W: 12, 0: Relative import 'forms', should be 'xTime.timetables.forms' (relative-import)
+R: 26, 0: Too many local variables (16/15) (too-many-locals)
+C: 71, 4: Invalid argument name "x" (invalid-name)
+C: 73,12: Invalid variable name "p" (invalid-name)
+W: 78,17: Used builtin function 'filter' (bad-builtin)
+W: 79,17: Used builtin function 'filter' (bad-builtin)
+W: 80,23: Used builtin function 'filter' (bad-builtin)
+R: 26, 0: Too many branches (18/12) (too-many-branches)
 
 
 Report
 ======
 118 statements analysed.
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |10     |10       |=          |
++-----------+-------+---------+-----------+
+|refactor   |5      |5        |=          |
++-----------+-------+---------+-----------+
+|warning    |7      |7        |=          |
++-----------+-------+---------+-----------+
+|error      |0      |13       |-13.00     |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++-----------------------+------+--------+---------+-----------+
+|module                 |error |warning |refactor |convention |
++=======================+======+========+=========+===========+
+|xTime.timetables.views |0.00  |71.43   |40.00    |30.00      |
++-----------------------+------+--------+---------+-----------+
+|xTime.timetables.urls  |0.00  |14.29   |0.00     |0.00       |
++-----------------------+------+--------+---------+-----------+
+|xTime.timetables.admin |0.00  |14.29   |0.00     |0.00       |
++-----------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|invalid-name            |8           |
++------------------------+------------+
+|relative-import         |4           |
++------------------------+------------+
+|locally-disabled        |3           |
++------------------------+------------+
+|import-error            |3           |
++------------------------+------------+
+|bad-builtin             |3           |
++------------------------+------------+
+|too-many-public-methods |2           |
++------------------------+------------+
+|too-many-locals         |1           |
++------------------------+------------+
+|too-many-branches       |1           |
++------------------------+------------+
+|too-few-public-methods  |1           |
++------------------------+------------+
+|missing-docstring       |1           |
++------------------------+------------+
+|line-too-long           |1           |
++------------------------+------------+
+|bad-inline-option       |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.14/10 (previous run: 2.63/10, +5.51)
 
 Duplication
 -----------
@@ -58,23 +118,6 @@ Duplication
 +-------------------------+------+---------+-----------+
 |percent duplicated lines |0.000 |0.000    |=          |
 +-------------------------+------+---------+-----------+
-
-
-
-Statistics by type
-------------------
-
-+---------+-------+-----------+-----------+------------+---------+
-|type     |number |old number |difference |%documented |%badname |
-+=========+=======+===========+===========+============+=========+
-|module   |7      |7          |=          |85.71       |0.00     |
-+---------+-------+-----------+-----------+------------+---------+
-|class    |4      |4          |=          |100.00      |0.00     |
-+---------+-------+-----------+-----------+------------+---------+
-|method   |6      |6          |=          |100.00      |66.67    |
-+---------+-------+-----------+-----------+------------+---------+
-|function |5      |5          |=          |100.00      |0.00     |
-+---------+-------+-----------+-----------+------------+---------+
 
 
 
@@ -102,85 +145,31 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |134    |69.79 |137      |-3.00      |
+|code      |134    |69.07 |134      |=          |
 +----------+-------+------+---------+-----------+
-|docstring |31     |16.15 |17       |+14.00     |
+|docstring |31     |15.98 |31       |=          |
 +----------+-------+------+---------+-----------+
-|comment   |5      |2.60  |6        |-1.00      |
+|comment   |7      |3.61  |5        |+2.00      |
 +----------+-------+------+---------+-----------+
-|empty     |22     |11.46 |22       |=          |
+|empty     |22     |11.34 |22       |=          |
 +----------+-------+------+---------+-----------+
 
 
 
-Messages by category
---------------------
+Statistics by type
+------------------
 
-+-----------+-------+---------+-----------+
-|type       |number |previous |difference |
-+===========+=======+=========+===========+
-|convention |10     |36       |-26.00     |
-+-----------+-------+---------+-----------+
-|refactor   |5      |5        |=          |
-+-----------+-------+---------+-----------+
-|warning    |7      |9        |-2.00      |
-+-----------+-------+---------+-----------+
-|error      |13     |13       |=          |
-+-----------+-------+---------+-----------+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |7          |=          |85.71       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |4      |4          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |6      |6          |=          |100.00      |66.67    |
++---------+-------+-----------+-----------+------------+---------+
+|function |5      |5          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
 
 
-
-% errors / warnings by module
------------------------------
-
-+-----------------------+-------+--------+---------+-----------+
-|module                 |error  |warning |refactor |convention |
-+=======================+=======+========+=========+===========+
-|xTime.timetables.views |100.00 |71.43   |40.00    |30.00      |
-+-----------------------+-------+--------+---------+-----------+
-|xTime.timetables.urls  |0.00   |14.29   |0.00     |0.00       |
-+-----------------------+-------+--------+---------+-----------+
-|xTime.timetables.admin |0.00   |14.29   |0.00     |0.00       |
-+-----------------------+-------+--------+---------+-----------+
-
-
-
-Messages
---------
-
-+------------------------+------------+
-|message id              |occurrences |
-+========================+============+
-|invalid-name            |8           |
-+------------------------+------------+
-|no-value-for-parameter  |7           |
-+------------------------+------------+
-|relative-import         |4           |
-+------------------------+------------+
-|no-member               |4           |
-+------------------------+------------+
-|import-error            |3           |
-+------------------------+------------+
-|bad-builtin             |3           |
-+------------------------+------------+
-|unexpected-keyword-arg  |2           |
-+------------------------+------------+
-|too-many-public-methods |2           |
-+------------------------+------------+
-|too-many-locals         |1           |
-+------------------------+------------+
-|too-many-branches       |1           |
-+------------------------+------------+
-|too-few-public-methods  |1           |
-+------------------------+------------+
-|missing-docstring       |1           |
-+------------------------+------------+
-|line-too-long           |1           |
-+------------------------+------------+
-
-
-
-Global evaluation
------------------
-Your code has been rated at 2.63/10 (previous run: 0.34/10, +2.29)
 
