@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0d81a6-b295-46c3-8297-a42b7a4a39aa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications/admin.py" afterPath="$PROJECT_DIR$/notifications/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/admin.py" afterPath="$PROJECT_DIR$/periods/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/admin.py" afterPath="$PROJECT_DIR$/timetables/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/admin.py" afterPath="$PROJECT_DIR$/users/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications/forms.py" afterPath="$PROJECT_DIR$/notifications/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/forms.py" afterPath="$PROJECT_DIR$/periods/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/forms.py" afterPath="$PROJECT_DIR$/timetables/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/forms.py" afterPath="$PROJECT_DIR$/users/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications/models.py" afterPath="$PROJECT_DIR$/notifications/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/models.py" afterPath="$PROJECT_DIR$/periods/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/models.py" afterPath="$PROJECT_DIR$/timetables/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xTime/settings.py" afterPath="$PROJECT_DIR$/xTime/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications/tests.py" afterPath="$PROJECT_DIR$/notifications/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/tests.py" afterPath="$PROJECT_DIR$/periods/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/tests.py" afterPath="$PROJECT_DIR$/timetables/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/tests.py" afterPath="$PROJECT_DIR$/users/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications/urls.py" afterPath="$PROJECT_DIR$/notifications/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/urls.py" afterPath="$PROJECT_DIR$/periods/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/urls.py" afterPath="$PROJECT_DIR$/timetables/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/urls.py" afterPath="$PROJECT_DIR$/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xTime/urls.py" afterPath="$PROJECT_DIR$/xTime/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications/views.py" afterPath="$PROJECT_DIR$/notifications/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/periods/views.py" afterPath="$PROJECT_DIR$/periods/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetables/views.py" afterPath="$PROJECT_DIR$/timetables/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xTime.iml" afterPath="$PROJECT_DIR$/.idea/xTime.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xTime/wsgi.py" afterPath="$PROJECT_DIR$/xTime/wsgi.py" />
     </list>
     <ignored path="Timetable.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +53,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/periods/forms.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/periods/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="30" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.35660848" vertical-offset="894" max-vertical-offset="1632">
+            <state line="10" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/periods/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="28" selection-start="3505" selection-end="3505" vertical-scroll-proportion="0.0" vertical-offset="1648" max-vertical-offset="2805">
+              <folding>
+                <element signature="e#27#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timetables/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="0" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.0" vertical-offset="1495" max-vertical-offset="2176">
+              <folding>
+                <element signature="e#27#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="8" selection-start="2945" selection-end="2945" vertical-scroll-proportion="0.0" vertical-offset="1223" max-vertical-offset="1853">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="55" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.7285714" vertical-offset="357" max-vertical-offset="1445">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timetables/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timetables/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="45" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notifications/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/periods/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="0" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
@@ -54,21 +168,40 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/notifications/templates/index.html" />
-        <option value="$PROJECT_DIR$/notifications/urls.py" />
         <option value="$PROJECT_DIR$/notifications/templates/create/index.html" />
         <option value="$PROJECT_DIR$/notifications/templates/send/index.html" />
-        <option value="$PROJECT_DIR$/notifications/views.py" />
         <option value="$PROJECT_DIR$/periods/templates/periods/edit/index.html" />
-        <option value="$PROJECT_DIR$/periods/models.py" />
-        <option value="$PROJECT_DIR$/periods/forms.py" />
         <option value="$PROJECT_DIR$/periods/templates/periods/detail/index.html" />
-        <option value="$PROJECT_DIR$/timetables/tests.py" />
-        <option value="$PROJECT_DIR$/users/tests.py" />
-        <option value="$PROJECT_DIR$/periods/tests.py" />
-        <option value="$PROJECT_DIR$/notifications/tests.py" />
-        <option value="$PROJECT_DIR$/periods/views.py" />
         <option value="$PROJECT_DIR$/timetables/templates/timetables/board/index.html" />
         <option value="$PROJECT_DIR$/template/base.html" />
+        <option value="$PROJECT_DIR$/notifications/forms.py" />
+        <option value="$PROJECT_DIR$/notifications/views.py" />
+        <option value="$PROJECT_DIR$/notifications/admin.py" />
+        <option value="$PROJECT_DIR$/notifications/models.py" />
+        <option value="$PROJECT_DIR$/periods/admin.py" />
+        <option value="$PROJECT_DIR$/timetables/models.py" />
+        <option value="$PROJECT_DIR$/timetables/forms.py" />
+        <option value="$PROJECT_DIR$/users/forms.py" />
+        <option value="$PROJECT_DIR$/xTime/settings.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/notifications/urls.py" />
+        <option value="$PROJECT_DIR$/periods/urls.py" />
+        <option value="$PROJECT_DIR$/users/urls.py" />
+        <option value="$PROJECT_DIR$/xTime/wsgi.py" />
+        <option value="$PROJECT_DIR$/xTime/urls.py" />
+        <option value="$PROJECT_DIR$/timetables/urls.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
+        <option value="$PROJECT_DIR$/notifications/tests.py" />
+        <option value="$PROJECT_DIR$/periods/tests.py" />
+        <option value="$PROJECT_DIR$/periods/forms.py" />
+        <option value="$PROJECT_DIR$/periods/models.py" />
+        <option value="$PROJECT_DIR$/timetables/admin.py" />
+        <option value="$PROJECT_DIR$/timetables/tests.py" />
+        <option value="$PROJECT_DIR$/periods/views.py" />
+        <option value="$PROJECT_DIR$/timetables/views.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/users/admin.py" />
+        <option value="$PROJECT_DIR$/users/tests.py" />
       </list>
     </option>
   </component>
@@ -104,31 +237,74 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Time Machine" />
+              <option name="myItemId" value="xTime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Time Machine" />
+              <option name="myItemId" value="xTime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Time Machine" />
+              <option name="myItemId" value="xTime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Time Machine" />
+              <option name="myItemId" value="xTime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Time Machine" />
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -136,9 +312,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xTime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notifications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,11 +559,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36927623" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36927623" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32791728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24231333" sideWeight="0.5335516" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -384,11 +574,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -408,30 +597,26 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/base.html">
+    <entry file="file://$PROJECT_DIR$/periods/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="81" selection-start="9254" selection-end="9254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825">
+        <state line="64" column="0" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1649">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="81" selection-start="9254" selection-end="9254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/periods/templates/periods/detail/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="3349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="155" selection-end="198" vertical-scroll-proportion="0.078341015" vertical-offset="0" max-vertical-offset="1836" />
+        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="3349" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/periods/templates/periods/edit/index.html">
@@ -439,81 +624,233 @@
         <state line="37" column="37" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.34" vertical-offset="510" max-vertical-offset="2074" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/periods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="50" selection-start="1092" selection-end="1092" vertical-scroll-proportion="-17.96" vertical-offset="452" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetables/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="413" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetables/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="675" selection-end="675" vertical-scroll-proportion="0.16949153" vertical-offset="287" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="413" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notifications/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="392" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notifications/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="936" selection-end="936" vertical-scroll-proportion="-0.1152" vertical-offset="599" max-vertical-offset="1224" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coverage/Capture.PNG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/periods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.81964284" vertical-offset="1581" max-vertical-offset="2618" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/periods/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.8625" vertical-offset="690" max-vertical-offset="1275" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timetables/templates/timetables/board/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.624" vertical-offset="834" max-vertical-offset="3349">
-          <folding />
-        </state>
+        <state line="72" column="0" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.624" vertical-offset="834" max-vertical-offset="3349" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/periods/templates/periods/detail/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.2384" vertical-offset="344" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="29" column="46" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.2384" vertical-offset="344" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="81" selection-start="8631" selection-end="8631" vertical-scroll-proportion="0.0" vertical-offset="2890" max-vertical-offset="3791">
+        <state line="170" column="81" selection-start="8631" selection-end="8631" vertical-scroll-proportion="0.0" vertical-offset="2890" max-vertical-offset="3791" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.2611367" vertical-offset="0" max-vertical-offset="651">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetables/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="27" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xTime/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="2857" selection-end="2857" vertical-scroll-proportion="2.9769585" vertical-offset="0" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="55" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/periods/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding>
+            <element signature="e#30#72#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xTime/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xTime/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="187" selection-end="187" vertical-scroll-proportion="0.13056836" vertical-offset="0" max-vertical-offset="651">
+          <folding>
+            <element signature="e#30#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetables/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="113" selection-end="113" vertical-scroll-proportion="0.13492064" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="78" selection-start="335" selection-end="335" vertical-scroll-proportion="0.31336406" vertical-offset="0" max-vertical-offset="651">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="62" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/periods/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetables/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding>
+            <element signature="e#30#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding>
+            <element signature="e#28#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/periods/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/periods/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="30" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.35660848" vertical-offset="894" max-vertical-offset="1632">
+        <state line="64" column="65" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.028571429" vertical-offset="1053" max-vertical-offset="1683">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/periods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetables/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="8" selection-start="2945" selection-end="2945" vertical-scroll-proportion="0.0" vertical-offset="1223" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/periods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="28" selection-start="3505" selection-end="3505" vertical-scroll-proportion="0.0" vertical-offset="1648" max-vertical-offset="2805">
+          <folding>
+            <element signature="e#27#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetables/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="0" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.0" vertical-offset="1495" max-vertical-offset="2176">
+          <folding>
+            <element signature="e#27#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetables/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="45" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="55" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.7285714" vertical-offset="357" max-vertical-offset="1445">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

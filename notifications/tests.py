@@ -1,17 +1,22 @@
+"""Unit tests go here"""
 from django.test import TestCase
 from notifications.models import Notification
 # Create your tests here.
-notification1 = Notification(text='Hello',
+NOTIFICATION1 = Notification(text='Hello',
                              new=True, )
-notification2 = Notification(text='Hi',
+NOTIFICATION2 = Notification(text='Hi',
                              new=False, )
-notification3 = Notification(text='Hello',
+NOTIFICATION3 = Notification(text='Hello',
                              new=False, )
-notification4 = Notification(text='Bonjour',
+NOTIFICATION4 = Notification(text='Bonjour',
                              new=False, )
 
 
-def compare_two_notifications(n1=Notification, n2=Notification):
+def compare_notifications(n1=Notification, n2=Notification):
+    """
+    If 2 notifications have the same text, they are equal (return TRUE)
+    Otherwise, they are different (return FALSE)
+    """
     if n1.text != n2.text:
         return False
     if n1.new != n2.new:
@@ -20,21 +25,27 @@ def compare_two_notifications(n1=Notification, n2=Notification):
 
 
 class TestNotifications(TestCase):
+    """Notification testing"""
     def test_notification_is_valid(self):
-        self.assertTrue(isinstance(notification1, Notification))
-        self.assertTrue(isinstance(notification2, Notification))
-        self.assertTrue(isinstance(notification3, Notification))
-        self.assertTrue(isinstance(notification4, Notification))
+        """Check whether notification is valid"""
+        self.assertTrue(isinstance(NOTIFICATION1, Notification))
+        self.assertTrue(isinstance(NOTIFICATION2, Notification))
+        self.assertTrue(isinstance(NOTIFICATION3, Notification))
+        self.assertTrue(isinstance(NOTIFICATION4, Notification))
 
     def test_same_notification_should_be_equal(self):
-        self.assertTrue(compare_two_notifications(notification1, notification1))
+        """Whether the same notification equal to itself"""
+        self.assertTrue(compare_notifications(NOTIFICATION1, NOTIFICATION1))
 
     def test_different_notification_should_not_be_equal(self):
-        self.assertFalse(compare_two_notifications(notification1, notification2))
+        """Notification with different text will not be equal"""
+        self.assertFalse(compare_notifications(NOTIFICATION1, NOTIFICATION2))
 
     def test_different_text_should_not_be_equal(self):
-        self.assertFalse(compare_two_notifications(notification1, notification3))
+        """Old and new notifications will not be equal """
+        self.assertFalse(compare_notifications(NOTIFICATION1, NOTIFICATION3))
 
     def test_different_new_should_not_be_equal(self):
-        self.assertFalse(compare_two_notifications(notification2, notification4))
+        """Notification with different text and age will not be equal"""
+        self.assertFalse(compare_notifications(NOTIFICATION2, NOTIFICATION4))
 

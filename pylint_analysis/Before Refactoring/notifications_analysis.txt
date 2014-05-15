@@ -1,0 +1,194 @@
+************* Module xTime.notifications
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.notifications.forms
+R:  6, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.notifications.views
+W:  3, 0: Relative import 'forms', should be 'xTime.notifications.forms' (relative-import)
+W:  5, 0: Relative import 'models', should be 'xTime.notifications.models' (relative-import)
+E: 15,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 15,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 16,11: Instance of 'GetNotification' has no 'is_valid' member (no-member)
+E: 17,23: Unexpected keyword argument 'text' in constructor call (unexpected-keyword-arg)
+E: 17,23: Unexpected keyword argument 'userID' in constructor call (unexpected-keyword-arg)
+E: 17,23: Unexpected keyword argument 'new' in constructor call (unexpected-keyword-arg)
+E: 17,23: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 17,23: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 17,23: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 17,41: Instance of 'GetNotification' has no 'cleaned_data' member (no-member)
+E: 18,43: Instance of 'GetNotification' has no 'cleaned_data' member (no-member)
+E: 25,15: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 25,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 25,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+************* Module xTime.notifications.admin
+W:  3, 0: Relative import 'models', should be 'xTime.notifications.models' (relative-import)
+************* Module xTime.notifications.urls
+C:  7, 0: Wrong continued indentation.
+    #url(r'^$', views.index, name='index'),
+    ^                  | (bad-continuation)
+C:  8, 0: Wrong continued indentation.
+    url(r'^$', views.send_notification, name='send_notification'),
+    ^                  | (bad-continuation)
+C:  9, 0: Wrong continued indentation.
+)
+^                     | (bad-continuation)
+W:  4, 0: Relative import 'views', should be 'xTime.notifications.views' (relative-import)
+C:  6, 0: Invalid constant name "urlpatterns" (invalid-name)
+************* Module xTime.notifications.tests
+C:  1, 0: Missing module docstring (missing-docstring)
+F:  2, 0: Unable to import 'notifications.models' (import-error)
+C:  4, 0: Invalid constant name "notification1" (invalid-name)
+C:  6, 0: Invalid constant name "notification2" (invalid-name)
+C:  8, 0: Invalid constant name "notification3" (invalid-name)
+C: 10, 0: Invalid constant name "notification4" (invalid-name)
+C: 14, 0: Invalid argument name "n1" (invalid-name)
+C: 14, 0: Invalid argument name "n2" (invalid-name)
+C: 14, 0: Missing function docstring (missing-docstring)
+C: 22, 0: Missing class docstring (missing-docstring)
+C: 23, 4: Missing method docstring (missing-docstring)
+C: 29, 4: Invalid method name "test_same_notification_should_be_equal" (invalid-name)
+C: 29, 4: Missing method docstring (missing-docstring)
+C: 32, 4: Invalid method name "test_different_notification_should_not_be_equal" (invalid-name)
+C: 32, 4: Missing method docstring (missing-docstring)
+C: 35, 4: Invalid method name "test_different_text_should_not_be_equal" (invalid-name)
+C: 35, 4: Missing method docstring (missing-docstring)
+C: 38, 4: Invalid method name "test_different_new_should_not_be_equal" (invalid-name)
+C: 38, 4: Missing method docstring (missing-docstring)
+R: 22, 0: Too many public methods (70/20) (too-many-public-methods)
+
+
+Report
+======
+61 statements analysed.
+
+External dependencies
+---------------------
+::
+
+    django 
+      \-conf 
+      | \-urls (xTime.notifications.urls)
+      \-contrib 
+      | \-admin (xTime.notifications.admin)
+      | \-auth 
+      |   \-models (xTime.notifications.models,xTime.notifications.forms)
+      \-db 
+      | \-models (xTime.notifications.models)
+      \-forms (xTime.notifications.forms)
+      \-http (xTime.notifications.views)
+      \-shortcuts (xTime.notifications.views)
+      \-test (xTime.notifications.tests)
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |73     |75.26 |73       |=          |
++----------+-------+------+---------+-----------+
+|docstring |9      |9.28  |9        |=          |
++----------+-------+------+---------+-----------+
+|comment   |1      |1.03  |1        |=          |
++----------+-------+------+---------+-----------+
+|empty     |14     |14.43 |14       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |23     |23       |=          |
++-----------+-------+---------+-----------+
+|refactor   |2      |2        |=          |
++-----------+-------+---------+-----------+
+|warning    |4      |4        |=          |
++-----------+-------+---------+-----------+
+|error      |14     |14       |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++--------------------------+-------+--------+---------+-----------+
+|module                    |error  |warning |refactor |convention |
++==========================+=======+========+=========+===========+
+|xTime.notifications.views |100.00 |50.00   |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+|xTime.notifications.urls  |0.00   |25.00   |0.00     |17.39      |
++--------------------------+-------+--------+---------+-----------+
+|xTime.notifications.admin |0.00   |25.00   |0.00     |0.00       |
++--------------------------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|invalid-name            |11          |
++------------------------+------------+
+|missing-docstring       |9           |
++------------------------+------------+
+|no-value-for-parameter  |8           |
++------------------------+------------+
+|relative-import         |4           |
++------------------------+------------+
+|unexpected-keyword-arg  |3           |
++------------------------+------------+
+|no-member               |3           |
++------------------------+------------+
+|bad-continuation        |3           |
++------------------------+------------+
+|too-many-public-methods |1           |
++------------------------+------------+
+|too-few-public-methods  |1           |
++------------------------+------------+
+|import-error            |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -6.23/10 (previous run: -6.23/10, +0.00)
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |7          |=          |71.43       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |3      |3          |=          |66.67       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |5      |5          |=          |0.00        |80.00    |
++---------+-------+-----------+-----------+------------+---------+
+|function |2      |2          |=          |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+

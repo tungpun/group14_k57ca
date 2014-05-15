@@ -1,0 +1,186 @@
+************* Module xTime.timetables
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.timetables.forms
+R:  5, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.timetables.urls
+W:  4, 0: Relative import 'views', should be 'xTime.timetables.views' (relative-import)
+************* Module xTime.timetables.admin
+W:  6, 0: Relative import 'models', should be 'xTime.timetables.models' (relative-import)
+************* Module xTime.timetables.tests
+F:  3, 0: Unable to import 'timetables.models' (import-error)
+F:  4, 0: Unable to import 'timetables.forms' (import-error)
+C: 17, 0: Invalid argument name "t1" (invalid-name)
+C: 17, 0: Invalid argument name "t2" (invalid-name)
+C: 35, 4: Invalid method name "test_same_period_should_be_equal" (invalid-name)
+C: 39, 4: Invalid method name "test_different_period_should_not_be_equal" (invalid-name)
+C: 43, 4: Invalid method name "test_different_semester_should_not_be_equal" (invalid-name)
+C: 47, 4: Invalid method name "test_different_code_should_not_be_equal" (invalid-name)
+R: 26, 0: Too many public methods (70/20) (too-many-public-methods)
+R: 52, 0: Too many public methods (66/20) (too-many-public-methods)
+************* Module xTime.timetables.views
+C: 78, 0: Line too long (84/80) (line-too-long)
+W:  8, 0: Relative import 'models', should be 'xTime.timetables.models' (relative-import)
+F:  9, 0: Unable to import 'periods.models' (import-error)
+W: 10, 0: Relative import 'forms', should be 'xTime.timetables.forms' (relative-import)
+R: 24, 0: Too many local variables (16/15) (too-many-locals)
+E: 33,14: Class 'Timetable' has no 'objects' member (no-member)
+C: 69, 4: Invalid argument name "x" (invalid-name)
+C: 71,12: Invalid variable name "p" (invalid-name)
+W: 76,17: Used builtin function 'filter' (bad-builtin)
+W: 77,17: Used builtin function 'filter' (bad-builtin)
+W: 78,23: Used builtin function 'filter' (bad-builtin)
+R: 24, 0: Too many branches (18/12) (too-many-branches)
+E:105,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:105,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:110,15: Instance of 'InsertTimetableForm' has no 'is_valid' member (no-member)
+E:111,32: Unexpected keyword argument 'owner' in constructor call (unexpected-keyword-arg)
+E:111,32: Unexpected keyword argument 'code' in constructor call (unexpected-keyword-arg)
+E:111,32: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:111,32: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:112,25: Instance of 'InsertTimetableForm' has no 'cleaned_data' member (no-member)
+E:113,25: Instance of 'InsertTimetableForm' has no 'cleaned_data' member (no-member)
+E:119,15: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:119,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:119,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+
+
+Report
+======
+118 statements analysed.
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |7          |=          |85.71       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |4      |4          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |6      |6          |=          |100.00      |66.67    |
++---------+-------+-----------+-----------+------------+---------+
+|function |5      |5          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    django 
+      \-conf 
+      | \-urls (xTime.timetables.urls)
+      \-contrib 
+      | \-admin (xTime.timetables.admin)
+      \-db 
+      | \-models (xTime.timetables.models)
+      \-forms (xTime.timetables.forms)
+      \-http (xTime.timetables.views)
+      \-shortcuts (xTime.timetables.views)
+      \-test (xTime.timetables.tests)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |134    |69.79 |137      |-3.00      |
++----------+-------+------+---------+-----------+
+|docstring |31     |16.15 |17       |+14.00     |
++----------+-------+------+---------+-----------+
+|comment   |5      |2.60  |6        |-1.00      |
++----------+-------+------+---------+-----------+
+|empty     |22     |11.46 |22       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |10     |36       |-26.00     |
++-----------+-------+---------+-----------+
+|refactor   |5      |5        |=          |
++-----------+-------+---------+-----------+
+|warning    |7      |9        |-2.00      |
++-----------+-------+---------+-----------+
+|error      |13     |13       |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++-----------------------+-------+--------+---------+-----------+
+|module                 |error  |warning |refactor |convention |
++=======================+=======+========+=========+===========+
+|xTime.timetables.views |100.00 |71.43   |40.00    |30.00      |
++-----------------------+-------+--------+---------+-----------+
+|xTime.timetables.urls  |0.00   |14.29   |0.00     |0.00       |
++-----------------------+-------+--------+---------+-----------+
+|xTime.timetables.admin |0.00   |14.29   |0.00     |0.00       |
++-----------------------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|invalid-name            |8           |
++------------------------+------------+
+|no-value-for-parameter  |7           |
++------------------------+------------+
+|relative-import         |4           |
++------------------------+------------+
+|no-member               |4           |
++------------------------+------------+
+|import-error            |3           |
++------------------------+------------+
+|bad-builtin             |3           |
++------------------------+------------+
+|unexpected-keyword-arg  |2           |
++------------------------+------------+
+|too-many-public-methods |2           |
++------------------------+------------+
+|too-many-locals         |1           |
++------------------------+------------+
+|too-many-branches       |1           |
++------------------------+------------+
+|too-few-public-methods  |1           |
++------------------------+------------+
+|missing-docstring       |1           |
++------------------------+------------+
+|line-too-long           |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 2.63/10 (previous run: 0.34/10, +2.29)
+

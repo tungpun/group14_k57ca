@@ -1,0 +1,386 @@
+************* Module xTime.periods
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.periods.tests
+C:  1, 0: Missing module docstring (missing-docstring)
+F:  2, 0: Unable to import 'periods.forms' (import-error)
+F:  3, 0: Unable to import 'periods.models' (import-error)
+C:  6, 0: Invalid constant name "period1" (invalid-name)
+C: 11, 0: Invalid constant name "period2" (invalid-name)
+C: 16, 0: Invalid constant name "period3" (invalid-name)
+C: 21, 0: Invalid constant name "period4" (invalid-name)
+C: 28, 0: Invalid argument name "p1" (invalid-name)
+C: 28, 0: Invalid argument name "p2" (invalid-name)
+C: 28, 0: Missing function docstring (missing-docstring)
+C: 40, 0: Missing class docstring (missing-docstring)
+C: 41, 4: Missing method docstring (missing-docstring)
+C: 47, 4: Invalid method name "test_same_period_should_be_equal" (invalid-name)
+C: 47, 4: Missing method docstring (missing-docstring)
+C: 50, 4: Invalid method name "test_different_period_should_not_be_equal" (invalid-name)
+C: 50, 4: Missing method docstring (missing-docstring)
+C: 53, 4: Invalid method name "test_different_lecturer_should_not_be_equal" (invalid-name)
+C: 53, 4: Missing method docstring (missing-docstring)
+C: 56, 4: Invalid method name "test_different_code_should_not_be_equal" (invalid-name)
+C: 56, 4: Missing method docstring (missing-docstring)
+R: 40, 0: Too many public methods (70/20) (too-many-public-methods)
+C: 60, 0: Missing class docstring (missing-docstring)
+C: 61, 4: Missing method docstring (missing-docstring)
+R: 60, 0: Too many public methods (66/20) (too-many-public-methods)
+************* Module xTime.periods.models
+C: 18, 0: No space allowed after keyword argument assignment
+    period_type = models.CharField(max_length= 30)
+
+                                             ^ (bad-whitespace)
+F:  5, 0: Unable to import 'timetables.models' (import-error)
+C: 11, 0: Missing class docstring (missing-docstring)
+W:  6, 0: Unused import forms (unused-import)
+************* Module xTime.periods.urls
+C:  7, 0: Wrong continued indentation.
+    url(r'^$', views.index, name='index'),
+
+    ^                  | (bad-continuation)
+C:  8, 0: Wrong continued indentation.
+    url(r'^edit/id=(?P<pid>\d+)', views.edit, name='edit'),
+
+    ^                  | (bad-continuation)
+C:  9, 0: Wrong continued indentation.
+    url(r'^add/id=(?P<pid>\d+)$', views.add, name='add'),
+
+    ^                  | (bad-continuation)
+C: 10, 0: Wrong continued indentation.
+    url(r'^id=(?P<pid>\d+)', views.detail, name='detail'),
+
+    ^                  | (bad-continuation)
+C: 11, 0: Wrong continued indentation.
+    url(r'^enroll/id=(?P<pid>\d+)$', views.enroll, name='enroll'),
+
+    ^                  | (bad-continuation)
+C: 12, 0: Wrong continued indentation.
+    url(r'^remove/id=(?P<pid>\d+)$', views.remove, name='remove'),
+
+    ^                  | (bad-continuation)
+C: 13, 0: Wrong continued indentation.
+)
+
+^                     | (bad-continuation)
+W:  4, 0: Relative import 'views', should be 'xTime.periods.views' (relative-import)
+C:  6, 0: Invalid constant name "urlpatterns" (invalid-name)
+************* Module xTime.periods.admin
+W:  6, 0: Relative import 'models', should be 'xTime.periods.models' (relative-import)
+************* Module xTime.periods.forms
+F:  5, 0: Unable to import 'timetables.models' (import-error)
+F:  6, 0: Unable to import 'periods.models' (import-error)
+C: 46, 0: Missing class docstring (missing-docstring)
+C: 65, 4: Missing method docstring (missing-docstring)
+E: 67,19: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E: 68,19: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E: 69,14: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+C: 75,12: Invalid variable name "check_existed" (invalid-name)
+C: 76,12: Invalid variable name "check_existed" (invalid-name)
+W: 75,12: Unused variable 'check_existed' (unused-variable)
+W:  5, 0: Unused import Timetable (unused-import)
+************* Module xTime.periods.views
+C: 73, 0: Line too long (87/80) (line-too-long)
+C: 86, 0: Trailing whitespace (trailing-whitespace)
+C: 91, 0: Exactly one space required before assignment
+    period_object= Period.objects.get(id=pid)
+
+                 ^ (bad-whitespace)
+C: 92, 0: No space allowed before :
+    if not period_object.timetable.owner == request.user.id :
+
+                                                            ^ (bad-whitespace)
+C:102, 0: Exactly one space required before assignment
+    period_object= Period.objects.get(id=pid)
+
+                 ^ (bad-whitespace)
+C:103, 0: No space allowed before :
+    if not period_object.timetable.owner == request.user.id :
+
+                                                            ^ (bad-whitespace)
+C:111, 0: Line too long (94/80) (line-too-long)
+C:112, 0: Line too long (88/80) (line-too-long)
+C:113, 0: Line too long (127/80) (line-too-long)
+C:114, 0: Line too long (84/80) (line-too-long)
+C:138, 0: Line too long (94/80) (line-too-long)
+F:  6, 0: Unable to import 'timetables.models' (import-error)
+W:  9, 0: Relative import 'models', should be 'xTime.periods.models' (relative-import)
+W: 10, 0: Relative import 'forms', should be 'xTime.periods.forms' (relative-import)
+C: 13, 0: Missing function docstring (missing-docstring)
+E: 17,20: Class 'Period' has no 'objects' member (no-member)
+C: 22, 0: Missing function docstring (missing-docstring)
+E: 27,14: Class 'Period' has no 'objects' member (no-member)
+C: 40, 0: Missing function docstring (missing-docstring)
+E: 49,18: Class 'Period' has no 'objects' member (no-member)
+E: 50,24: Class 'Period' has no 'objects' member (no-member)
+C: 58,12: Invalid variable name "check_existed" (invalid-name)
+C: 59,12: Invalid variable name "check_existed" (invalid-name)
+C: 60,12: Invalid variable name "p" (invalid-name)
+E: 77,21: Unexpected keyword argument 'lecturer' in constructor call (unexpected-keyword-arg)
+E: 77,21: Unexpected keyword argument 'code' in constructor call (unexpected-keyword-arg)
+E: 77,21: Unexpected keyword argument 'timetable_id' in constructor call (unexpected-keyword-arg)
+E: 77,21: Unexpected keyword argument 'length' in constructor call (unexpected-keyword-arg)
+E: 77,21: Unexpected keyword argument 'period_type' in constructor call (unexpected-keyword-arg)
+E: 77,21: Unexpected keyword argument 'position' in constructor call (unexpected-keyword-arg)
+E: 77,21: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 77,21: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+W: 58,12: Unused variable 'check_existed' (unused-variable)
+C: 87, 0: Missing function docstring (missing-docstring)
+E: 91,19: Class 'Period' has no 'objects' member (no-member)
+E: 95, 4: Class 'Period' has no 'objects' member (no-member)
+C: 98, 0: Missing function docstring (missing-docstring)
+E:102,19: Class 'Period' has no 'objects' member (no-member)
+E:107,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:107,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:108,11: Instance of 'EditPeriodForm' has no 'is_valid' member (no-member)
+E:109,12: Class 'Period' has no 'objects' member (no-member)
+E:109,54: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:110,54: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:111,61: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:112,58: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:113,63: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:113,99: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:114,56: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:119,15: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:119,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:119,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:120,17: Class 'Period' has no 'objects' member (no-member)
+C:127, 0: Missing function docstring (missing-docstring)
+E:132,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:132,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:133,11: Instance of 'EditPeriodForm' has no 'is_valid' member (no-member)
+E:134,25: Unexpected keyword argument 'lecturer' in constructor call (unexpected-keyword-arg)
+E:134,25: Unexpected keyword argument 'code' in constructor call (unexpected-keyword-arg)
+E:134,25: Unexpected keyword argument 'timetable_id' in constructor call (unexpected-keyword-arg)
+E:134,25: Unexpected keyword argument 'length' in constructor call (unexpected-keyword-arg)
+E:134,25: Unexpected keyword argument 'position' in constructor call (unexpected-keyword-arg)
+E:134,25: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:134,25: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:135,21: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:136,21: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:137,25: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:138,30: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:138,66: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:139,23: Instance of 'EditPeriodForm' has no 'cleaned_data' member (no-member)
+E:146,15: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:146,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:146,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+W:  5, 0: Unused import User (unused-import)
+R:  1, 0: Similar lines in 2 files
+==xTime.periods.forms:80
+==xTime.periods.views:63
+                if (j > 0) and (j < 71):
+                    free[j] = False
+                j += 1
+        j = pos
+        while j <= pos+leg-1:
+            if j > 70: (duplicate-code)
+
+
+
+Report
+
+======
+
+191 statements analysed.
+
+
+
+Duplication
+
+-----------
+
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |6     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |1.676 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+
+
+
+Statistics by type
+
+------------------
+
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |NC         |NC         |71.43       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |4      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |7      |NC         |NC         |0.00        |57.14    |
++---------+-------+-----------+-----------+------------+---------+
+|function |7      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+
+
+
+External dependencies
+
+---------------------
+
+::
+
+
+    django 
+
+      \-conf 
+
+      | \-urls (xTime.periods.urls)
+
+      \-contrib 
+
+      | \-admin (xTime.periods.admin)
+
+      | \-auth 
+
+      |   \-models (xTime.periods.views)
+
+      \-db 
+
+      | \-models (xTime.periods.models)
+
+      \-forms (xTime.periods.models,xTime.periods.forms)
+
+      \-http (xTime.periods.views)
+
+      \-shortcuts (xTime.periods.views)
+
+      \-test (xTime.periods.tests)
+
+
+
+
+
+
+
+Raw metrics
+
+-----------
+
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |288    |87.80 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |16     |4.88  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |3      |0.91  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |21     |6.40  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+
+
+
+Messages by category
+
+--------------------
+
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |55     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |9      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |52     |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+
+
+
+% errors / warnings by module
+
+-----------------------------
+
+
++---------------------+------+--------+---------+-----------+
+|module               |error |warning |refactor |convention |
++=====================+======+========+=========+===========+
+|xTime.periods.views  |94.23 |44.44   |33.33    |36.36      |
++---------------------+------+--------+---------+-----------+
+|xTime.periods.forms  |5.77  |22.22   |0.00     |7.27       |
++---------------------+------+--------+---------+-----------+
+|xTime.periods.urls   |0.00  |11.11   |0.00     |14.55      |
++---------------------+------+--------+---------+-----------+
+|xTime.periods.models |0.00  |11.11   |0.00     |3.64       |
++---------------------+------+--------+---------+-----------+
+|xTime.periods.admin  |0.00  |11.11   |0.00     |0.00       |
++---------------------+------+--------+---------+-----------+
+
+
+
+
+
+
+Messages
+
+--------
+
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|no-member               |27          |
++------------------------+------------+
+|missing-docstring       |20          |
++------------------------+------------+
+|invalid-name            |16          |
++------------------------+------------+
+|no-value-for-parameter  |14          |
++------------------------+------------+
+|unexpected-keyword-arg  |11          |
++------------------------+------------+
+|bad-continuation        |7           |
++------------------------+------------+
+|line-too-long           |6           |
++------------------------+------------+
+|import-error            |6           |
++------------------------+------------+
+|bad-whitespace          |5           |
++------------------------+------------+
+|relative-import         |4           |
++------------------------+------------+
+|unused-import           |3           |
++------------------------+------------+
+|unused-variable         |2           |
++------------------------+------------+
+|too-many-public-methods |2           |
++------------------------+------------+
+|trailing-whitespace     |1           |
++------------------------+------------+
+|duplicate-code          |1           |
++------------------------+------------+
+
+
+
+
+
+
+Global evaluation
+
+-----------------
+
+Your code has been rated at -7.12/10
+
+
+

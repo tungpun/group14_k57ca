@@ -1,8 +1,6 @@
-__author__ = 'Nguyen Huu Tung'
+"""Forms create here"""
 
 from django import forms
-
-from timetables.models import Timetable
 from periods.models import Period
 
 MONDAY = 0
@@ -34,7 +32,7 @@ ORDER_CHOICES = (
     (9, '9'),
     (10, '10'),
 )
-TYPEPERIOD_CHOICES = (
+TYPE_PERIOD_CHOICES = (
     (1, 'Science'),
     (2, 'Technology'),
     (3, 'Art'),
@@ -44,6 +42,7 @@ TYPEPERIOD_CHOICES = (
 
 
 class EditPeriodForm(forms.Form):
+    """Form to edit period"""
     code = forms.CharField(max_length=10)
     name = forms.CharField(max_length=30)
     lecturer = forms.CharField(max_length=30)
@@ -59,18 +58,20 @@ class EditPeriodForm(forms.Form):
 
     period_type = forms.ChoiceField(
         widget=forms.Select,
-        choices=TYPEPERIOD_CHOICES,
+        choices=TYPE_PERIOD_CHOICES,
     )
 
     def check_conflict(self, pid):
+        """Check if course conflicts with already-enrolled course"""
         periods_array = Period.objects.filter(timetable_id=pid)
         pos = (int(self.cleaned_data['day']) - 1) * 10
         pos += int(self.cleaned_data['start'])
         leg = self.cleaned_data['length']
-        free = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
-                39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
-                57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73]
+        free = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+                19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+                35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+                51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66,
+                67, 68, 69, 70, 71, 72, 73]
         for f in free:
             f = False
         for period in periods_array:

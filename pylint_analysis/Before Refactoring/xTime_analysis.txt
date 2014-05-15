@@ -1,0 +1,158 @@
+************* Module xTime.xTime
+C:  1, 0: Invalid module name "xTime" (invalid-name)
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.xTime.wsgi
+C: 14, 0: Invalid constant name "application" (invalid-name)
+************* Module xTime.xTime.urls
+C:  9, 0: Wrong continued indentation.
+    # Examples:
+    ^                  | (bad-continuation)
+C: 13, 0: Wrong continued indentation.
+    url(r'^admin/', include(admin.site.urls)),
+    ^                  | (bad-continuation)
+C: 14, 0: Wrong continued indentation.
+    url(r'^periods/', include('periods.urls')),
+    ^                  | (bad-continuation)
+C: 15, 0: Wrong continued indentation.
+    url(r'^users/', include('users.urls')),
+    ^                  | (bad-continuation)
+C: 16, 0: Wrong continued indentation.
+    url(r'^notifications/', include('notifications.urls')),
+    ^                  | (bad-continuation)
+C: 17, 0: Wrong continued indentation.
+    url(r'^', include('timetables.urls')),
+    ^                  | (bad-continuation)
+C: 18, 0: Wrong continued indentation.
+    url(r'^favicon\.ico$', RedirectView.as_view(url='../static/image/favi3.ico')),
+    ^                  | (bad-continuation)
+C: 18, 0: Line too long (82/80) (line-too-long)
+C: 19, 0: Wrong continued indentation.
+)
+^                     | (bad-continuation)
+C:  8, 0: Invalid constant name "urlpatterns" (invalid-name)
+E: 18,27: No value for argument 'cls' in unbound method call (no-value-for-parameter)
+W:  3, 0: Unused import TemplateView (unused-import)
+
+
+Report
+======
+30 statements analysed.
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |4      |NC         |NC         |75.00       |25.00    |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    django 
+      \-conf 
+      | \-urls (xTime.xTime.urls)
+      \-contrib 
+      | \-admin (xTime.xTime.urls)
+      \-core 
+      | \-wsgi (xTime.xTime.wsgi)
+      \-views 
+        \-generic 
+          \-base (xTime.xTime.urls)
+    os (xTime.xTime.settings,xTime.xTime.wsgi)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |45     |34.88 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |46     |35.66 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |23     |17.83 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |15     |11.63 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |13     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |1      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |1      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++-----------------+-------+--------+---------+-----------+
+|module           |error  |warning |refactor |convention |
++=================+=======+========+=========+===========+
+|xTime.xTime.urls |100.00 |100.00  |0.00     |76.92      |
++-----------------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------+------------+
+|message id             |occurrences |
++=======================+============+
+|bad-continuation       |8           |
++-----------------------+------------+
+|invalid-name           |3           |
++-----------------------+------------+
+|unused-import          |1           |
++-----------------------+------------+
+|no-value-for-parameter |1           |
++-----------------------+------------+
+|missing-docstring      |1           |
++-----------------------+------------+
+|line-too-long          |1           |
++-----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 3.67/10
+

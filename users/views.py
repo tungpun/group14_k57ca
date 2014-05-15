@@ -1,3 +1,4 @@
+"""Views implement here"""
 from django.shortcuts import render
 from django.contrib.auth import logout, authenticate, login
 from django.http import HttpResponse, HttpResponseRedirect
@@ -6,6 +7,7 @@ from forms import LoginForm, RegisterForm
 
 
 def auth_login(request):
+    """User login implement"""
     if request.user.is_authenticated():
         return HttpResponseRedirect("../../")
     if request.method == 'POST':
@@ -33,12 +35,14 @@ def auth_login(request):
 
 
 def auth_logout(request):
+    """Logout request"""
     logout(request)
     return HttpResponseRedirect("../../users/gateway/do=3")
     # Redirect to a success page.
 
 
 def auth_register(request):
+    """Register request"""
     if request.user.is_authenticated():
         return HttpResponseRedirect("../../")
     if request.method == 'POST':
@@ -76,6 +80,7 @@ def auth_register(request):
 
 
 def gateway(request, pid="0"):
+    """Cases handle"""
     message = "Hacker detected!"
     if pid == "1":      # Register
         message = "Register completed. Have fun with Time Machine :)"

@@ -1,0 +1,212 @@
+************* Module xTime.users
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.users.forms
+R:  6, 0: Too few public methods (1/2) (too-few-public-methods)
+R: 12, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.users.urls
+C:  7, 0: Line too long (84/80) (line-too-long)
+C:  8, 0: Line too long (81/80) (line-too-long)
+C:  9, 0: Line too long (90/80) (line-too-long)
+C: 10, 0: Line too long (88/80) (line-too-long)
+W:  4, 0: Relative import 'views', should be 'xTime.users.views' (relative-import)
+************* Module xTime.users.views
+W:  6, 0: Relative import 'forms', should be 'xTime.users.forms' (relative-import)
+E: 14,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 14,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 15,11: Instance of 'LoginForm' has no 'is_valid' member (no-member)
+E: 16,23: Instance of 'LoginForm' has no 'cleaned_data' member (no-member)
+E: 17,23: Instance of 'LoginForm' has no 'cleaned_data' member (no-member)
+E: 30,11: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 30,11: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 30,11: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 49,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 49,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 50,11: Instance of 'RegisterForm' has no 'is_valid' member (no-member)
+E: 51,23: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 52,25: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 53,24: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 54,20: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 55,23: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 75,11: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 75,11: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 75,11: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+************* Module xTime.users.tests
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  3, 0: Wildcard import users.forms (wildcard-import)
+F:  3, 0: Unable to import 'users.forms' (import-error)
+E:  6, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E:  6, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E:  6, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:  6, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:  6, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E:  8, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E:  8, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E:  8, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:  8, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:  8, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 10, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E: 10, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E: 10, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 10, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 10, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 12, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E: 12, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E: 12, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 12, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 12, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C: 16, 0: Invalid argument name "u1" (invalid-name)
+C: 16, 0: Invalid argument name "u2" (invalid-name)
+C: 40, 4: Invalid method name "test_different_user_should_not_be_equal" (invalid-name)
+C: 44, 4: Invalid method name "test_different_username_should_not_be_equal" (invalid-name)
+C: 48, 4: Invalid method name "test_different_password_should_not_be_equal" (invalid-name)
+R: 27, 0: Too many public methods (70/20) (too-many-public-methods)
+E: 61,15: Undefined variable 'LoginForm' (undefined-variable)
+E: 66,15: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E: 66,15: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E: 66,15: Unexpected keyword argument 'first_name' in constructor call (unexpected-keyword-arg)
+E: 66,15: Unexpected keyword argument 'last_name' in constructor call (unexpected-keyword-arg)
+E: 66,15: Unexpected keyword argument 'email' in constructor call (unexpected-keyword-arg)
+E: 66,15: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 66,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 66,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 78,15: Undefined variable 'RegisterForm' (undefined-variable)
+R: 53, 0: Too many public methods (67/20) (too-many-public-methods)
+
+
+Report
+======
+115 statements analysed.
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |7          |=          |71.43       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |4      |4          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |7      |7          |=          |100.00      |42.86    |
++---------+-------+-----------+-----------+------------+---------+
+|function |5      |5          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    django 
+      \-conf 
+      | \-urls (xTime.users.urls)
+      \-contrib 
+      | \-auth (xTime.users.views)
+      |   \-models (xTime.users.views,xTime.users.tests)
+      \-forms (xTime.users.forms)
+      \-http (xTime.users.views)
+      \-shortcuts (xTime.users.views)
+      \-test (xTime.users.tests)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |144    |69.57 |147      |-3.00      |
++----------+-------+------+---------+-----------+
+|docstring |35     |16.91 |18       |+17.00     |
++----------+-------+------+---------+-----------+
+|comment   |2      |0.97  |2        |=          |
++----------+-------+------+---------+-----------+
+|empty     |26     |12.56 |22       |+4.00      |
++----------+-------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |11     |58       |-47.00     |
++-----------+-------+---------+-----------+
+|refactor   |4      |4        |=          |
++-----------+-------+---------+-----------+
+|warning    |3      |10       |-7.00      |
++-----------+-------+---------+-----------+
+|error      |49     |49       |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++------------------+------+--------+---------+-----------+
+|module            |error |warning |refactor |convention |
++==================+======+========+=========+===========+
+|xTime.users.tests |61.22 |33.33   |50.00    |54.55      |
++------------------+------+--------+---------+-----------+
+|xTime.users.views |38.78 |33.33   |0.00     |0.00       |
++------------------+------+--------+---------+-----------+
+|xTime.users.urls  |0.00  |33.33   |0.00     |36.36      |
++------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|no-value-for-parameter  |25          |
++------------------------+------------+
+|unexpected-keyword-arg  |13          |
++------------------------+------------+
+|no-member               |9           |
++------------------------+------------+
+|invalid-name            |5           |
++------------------------+------------+
+|line-too-long           |4           |
++------------------------+------------+
+|undefined-variable      |2           |
++------------------------+------------+
+|too-many-public-methods |2           |
++------------------------+------------+
+|too-few-public-methods  |2           |
++------------------------+------------+
+|relative-import         |2           |
++------------------------+------------+
+|missing-docstring       |2           |
++------------------------+------------+
+|wildcard-import         |1           |
++------------------------+------------+
+|import-error            |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -12.87/10 (previous run: -17.09/10, +4.22)
+

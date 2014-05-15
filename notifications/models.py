@@ -1,3 +1,4 @@
+"""Models initialize here"""
 from django.db import models
 
 from django.contrib.auth.models import User
@@ -5,6 +6,7 @@ from django.contrib.auth.models import User
 
 
 class Notification(models.Model):
+    """Notification properties"""
     text = models.CharField(max_length=512)
     userID = models.ForeignKey(User)
     new = models.BooleanField()

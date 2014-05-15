@@ -1,0 +1,411 @@
+************* Module xTime.users
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module xTime.users.admin
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Unused import admin (unused-import)
+************* Module xTime.users.tests
+C:  6, 0: No space allowed around keyword argument assignment
+user1 = User(username = 'vuong',
+
+                      ^ (bad-whitespace)
+C:  7, 0: No space allowed around keyword argument assignment
+             password = '123',)
+
+                      ^ (bad-whitespace)
+C:  8, 0: No space allowed around keyword argument assignment
+user2 = User(username = 'hoang',
+
+                      ^ (bad-whitespace)
+C:  9, 0: No space allowed around keyword argument assignment
+             password = '94',)
+
+                      ^ (bad-whitespace)
+C: 10, 0: No space allowed around keyword argument assignment
+user3 = User(username = 'hoang',
+
+                      ^ (bad-whitespace)
+C: 11, 0: No space allowed around keyword argument assignment
+             password = '456',)
+
+                      ^ (bad-whitespace)
+C: 12, 0: No space allowed around keyword argument assignment
+user4 = User(username = 'nguyen',
+
+                      ^ (bad-whitespace)
+C: 13, 0: No space allowed around keyword argument assignment
+             password = '123',)
+
+                      ^ (bad-whitespace)
+C: 15, 0: No space allowed around keyword argument assignment
+def compare_two_users(u1 = User, u2 = User):
+
+                       ^ (bad-whitespace)
+C: 15, 0: No space allowed around keyword argument assignment
+def compare_two_users(u1 = User, u2 = User):
+
+                                  ^ (bad-whitespace)
+W: 16, 0: Bad indentation. Found 8 spaces, expected 4 (bad-indentation)
+W: 17, 0: Bad indentation. Found 12 spaces, expected 8 (bad-indentation)
+W: 18, 0: Bad indentation. Found 8 spaces, expected 4 (bad-indentation)
+W: 19, 0: Bad indentation. Found 12 spaces, expected 8 (bad-indentation)
+W: 20, 0: Bad indentation. Found 8 spaces, expected 4 (bad-indentation)
+C: 31, 0: Exactly one space required after comma
+        self.assertTrue(compare_two_users(user1,user1))
+
+                                             ^ (bad-whitespace)
+C: 34, 0: Exactly one space required after comma
+        self.assertFalse(compare_two_users(user1,user2))
+
+                                              ^ (bad-whitespace)
+C: 37, 0: Exactly one space required after comma
+        self.assertFalse(compare_two_users(user1,user3))
+
+                                              ^ (bad-whitespace)
+C: 40, 0: Exactly one space required after comma
+        self.assertFalse(compare_two_users(user2,user4))
+
+                                              ^ (bad-whitespace)
+C: 53, 0: No space allowed around keyword argument assignment
+        user = User(username = 'hoangvuong',
+
+                             ^ (bad-whitespace)
+C: 54, 0: No space allowed around keyword argument assignment
+                    first_name = 'Vuong',
+
+                               ^ (bad-whitespace)
+C: 55, 0: No space allowed around keyword argument assignment
+                    last_name = 'Nguyen',
+
+                              ^ (bad-whitespace)
+C: 56, 0: No space allowed around keyword argument assignment
+                    email = 'hoangvuong94st@gmail.com',
+
+                          ^ (bad-whitespace)
+C: 57, 0: No space allowed around keyword argument assignment
+                    password = '123456',)
+
+                             ^ (bad-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  3, 0: Wildcard import users.forms (wildcard-import)
+F:  3, 0: Unable to import 'users.forms' (import-error)
+C:  6, 0: Invalid constant name "user1" (invalid-name)
+E:  6, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E:  6, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E:  6, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:  6, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:  6, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C:  8, 0: Invalid constant name "user2" (invalid-name)
+E:  8, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E:  8, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E:  8, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E:  8, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E:  8, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C: 10, 0: Invalid constant name "user3" (invalid-name)
+E: 10, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E: 10, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E: 10, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 10, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 10, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C: 12, 0: Invalid constant name "user4" (invalid-name)
+E: 12, 8: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E: 12, 8: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E: 12, 8: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 12, 8: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 12, 8: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C: 15, 0: Invalid function name "compare_two_users" (invalid-name)
+C: 15, 0: Invalid argument name "u1" (invalid-name)
+C: 15, 0: Invalid argument name "u2" (invalid-name)
+C: 15, 0: Missing function docstring (missing-docstring)
+C: 22, 0: Invalid class name "testUsers" (invalid-name)
+C: 22, 0: Missing class docstring (missing-docstring)
+C: 24, 4: Invalid method name "testUserIsValid" (invalid-name)
+C: 24, 4: Missing method docstring (missing-docstring)
+C: 30, 4: Invalid method name "testSamePeriodShouldBeEqual" (invalid-name)
+C: 30, 4: Missing method docstring (missing-docstring)
+C: 33, 4: Invalid method name "testDiffirentPeriodShouldNotBeEqual" (invalid-name)
+C: 33, 4: Missing method docstring (missing-docstring)
+C: 36, 4: Invalid method name "testDiffirentLecturerShouldNotBeEqual" (invalid-name)
+C: 36, 4: Missing method docstring (missing-docstring)
+C: 39, 4: Invalid method name "testDiffirentCodeShouldNotBeEqual" (invalid-name)
+C: 39, 4: Missing method docstring (missing-docstring)
+R: 22, 0: Too many public methods (70/20) (too-many-public-methods)
+C: 42, 0: Invalid class name "testPeriodsForms" (invalid-name)
+C: 42, 0: Missing class docstring (missing-docstring)
+C: 44, 4: Invalid method name "testValidLoginForm" (invalid-name)
+C: 44, 4: Missing method docstring (missing-docstring)
+E: 49,15: Undefined variable 'LoginForm' (undefined-variable)
+C: 52, 4: Invalid method name "testValidRegisterForm" (invalid-name)
+C: 52, 4: Missing method docstring (missing-docstring)
+E: 53,15: Unexpected keyword argument 'username' in constructor call (unexpected-keyword-arg)
+E: 53,15: Unexpected keyword argument 'password' in constructor call (unexpected-keyword-arg)
+E: 53,15: Unexpected keyword argument 'first_name' in constructor call (unexpected-keyword-arg)
+E: 53,15: Unexpected keyword argument 'last_name' in constructor call (unexpected-keyword-arg)
+E: 53,15: Unexpected keyword argument 'email' in constructor call (unexpected-keyword-arg)
+E: 53,15: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 53,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 53,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 65,15: Undefined variable 'RegisterForm' (undefined-variable)
+R: 42, 0: Too many public methods (67/20) (too-many-public-methods)
+************* Module xTime.users.views
+W:  6, 0: Relative import 'forms', should be 'xTime.users.forms' (relative-import)
+C:  9, 0: Missing function docstring (missing-docstring)
+E: 13,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 13,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 14,11: Instance of 'LoginForm' has no 'is_valid' member (no-member)
+E: 15,23: Instance of 'LoginForm' has no 'cleaned_data' member (no-member)
+E: 16,23: Instance of 'LoginForm' has no 'cleaned_data' member (no-member)
+E: 29,11: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 29,11: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 29,11: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C: 36, 0: Missing function docstring (missing-docstring)
+C: 42, 0: Missing function docstring (missing-docstring)
+E: 46,15: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 46,15: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+E: 47,11: Instance of 'RegisterForm' has no 'is_valid' member (no-member)
+E: 48,23: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 49,25: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 50,24: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 51,20: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 52,23: Instance of 'RegisterForm' has no 'cleaned_data' member (no-member)
+E: 72,11: No value for argument 'name' in constructor call (no-value-for-parameter)
+E: 72,11: No value for argument 'bases' in constructor call (no-value-for-parameter)
+E: 72,11: No value for argument 'attrs' in constructor call (no-value-for-parameter)
+C: 79, 0: Missing function docstring (missing-docstring)
+************* Module xTime.users.models
+W:  2, 0: Unused import models (unused-import)
+************* Module xTime.users.forms
+R:  6, 0: Too few public methods (1/2) (too-few-public-methods)
+R: 12, 0: Too few public methods (1/2) (too-few-public-methods)
+************* Module xTime.users.urls
+C:  7, 0: Wrong continued indentation.
+    url(r'^auth_logout$', views.auth_logout, name='auth_logout'),
+
+    ^                  | (bad-continuation)
+C:  8, 0: Wrong continued indentation.
+    url(r'^auth_login$', views.auth_login, name='auth_login'),
+
+    ^                  | (bad-continuation)
+C:  9, 0: Wrong continued indentation.
+    url(r'^auth_register$', views.auth_register, name='auth_register'),
+
+    ^                  | (bad-continuation)
+C: 10, 0: Wrong continued indentation.
+    url(r'^gateway/do=(?P<pid>\d+)', views.gateway, name='gateway'),
+
+    ^                  | (bad-continuation)
+C: 11, 0: Wrong continued indentation.
+)
+
+^                     | (bad-continuation)
+W:  4, 0: Relative import 'views', should be 'xTime.users.views' (relative-import)
+C:  6, 0: Invalid constant name "urlpatterns" (invalid-name)
+
+
+
+Report
+
+======
+
+117 statements analysed.
+
+
+
+Duplication
+
+-----------
+
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+
+
+
+Statistics by type
+
+------------------
+
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |NC         |NC         |57.14       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |4      |NC         |NC         |50.00       |50.00    |
++---------+-------+-----------+-----------+------------+---------+
+|method   |7      |NC         |NC         |0.00        |100.00   |
++---------+-------+-----------+-----------+------------+---------+
+|function |5      |NC         |NC         |0.00        |20.00    |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+
+
+
+External dependencies
+
+---------------------
+
+::
+
+
+    django 
+
+      \-conf 
+
+      | \-urls (xTime.users.urls)
+
+      \-contrib 
+
+      | \-admin (xTime.users.admin)
+
+      | \-auth (xTime.users.views)
+
+      |   \-models (xTime.users.views,xTime.users.tests)
+
+      \-db 
+
+      | \-models (xTime.users.models)
+
+      \-forms (xTime.users.forms)
+
+      \-http (xTime.users.views)
+
+      \-shortcuts (xTime.users.views)
+
+      \-test (xTime.users.tests)
+
+
+
+
+
+
+
+Raw metrics
+
+-----------
+
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |147    |77.78 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |18     |9.52  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |2      |1.06  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |22     |11.64 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+
+
+
+Messages by category
+
+--------------------
+
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |58     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |4      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |10     |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |49     |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+
+
+
+% errors / warnings by module
+
+-----------------------------
+
+
++-------------------+------+--------+---------+-----------+
+|module             |error |warning |refactor |convention |
++===================+======+========+=========+===========+
+|xTime.users.tests  |61.22 |60.00   |50.00    |79.31      |
++-------------------+------+--------+---------+-----------+
+|xTime.users.views  |38.78 |10.00   |0.00     |6.90       |
++-------------------+------+--------+---------+-----------+
+|xTime.users.urls   |0.00  |10.00   |0.00     |10.34      |
++-------------------+------+--------+---------+-----------+
+|xTime.users.admin  |0.00  |10.00   |0.00     |1.72       |
++-------------------+------+--------+---------+-----------+
+|xTime.users.models |0.00  |10.00   |0.00     |0.00       |
++-------------------+------+--------+---------+-----------+
+
+
+
+
+
+
+Messages
+
+--------
+
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|no-value-for-parameter  |25          |
++------------------------+------------+
+|bad-whitespace          |19          |
++------------------------+------------+
+|missing-docstring       |17          |
++------------------------+------------+
+|invalid-name            |17          |
++------------------------+------------+
+|unexpected-keyword-arg  |13          |
++------------------------+------------+
+|no-member               |9           |
++------------------------+------------+
+|bad-indentation         |5           |
++------------------------+------------+
+|bad-continuation        |5           |
++------------------------+------------+
+|unused-import           |2           |
++------------------------+------------+
+|undefined-variable      |2           |
++------------------------+------------+
+|too-many-public-methods |2           |
++------------------------+------------+
+|too-few-public-methods  |2           |
++------------------------+------------+
+|relative-import         |2           |
++------------------------+------------+
+|wildcard-import         |1           |
++------------------------+------------+
+|import-error            |1           |
++------------------------+------------+
+
+
+
+
+
+
+Global evaluation
+
+-----------------
+
+Your code has been rated at -17.09/10
+
+
+

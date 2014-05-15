@@ -1,7 +1,7 @@
+"""Views implement here"""
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -11,6 +11,7 @@ from forms import InsertTimetableForm
 
 
 def index(request):
+    """Index page view"""
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
 
@@ -21,6 +22,7 @@ def index(request):
 
 
 def board(request):    # default of pid is 1
+    """Timetable render"""
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
     # request.session['a'] = 1
@@ -49,7 +51,7 @@ def board(request):    # default of pid is 1
         if free:
             mark = False
             for period in periods_array:
-                if (period.position < i) and (i < period.position + period.length):
+                if (period.position < i)and(i < period.position+period.length):
                     mark = True
                     break
             if mark:
@@ -63,16 +65,17 @@ def board(request):    # default of pid is 1
 
     objs.sort(key=lambda obj: obj.position)
     #objs.sort(cmp=None,key=position,request=False)
-    def f(x):
-        for period in periods_array:
-            if x.code == period.code:
+
+    def check_existed(x):
+        """Check if periods already existed"""
+        for p in periods_array:
+            if x.code == p.code:
                 return False
         return True
 
-    course_new = filter(f,Period.objects.all().order_by('-id'))[:5]
-    course_hot = filter(f,Period.objects.all().order_by('?'))[:5]
-    course_recommend = filter(f,Period.objects.all().order_by('?'))[:5]
-
+    course_new = filter(check_existed, Period.objects.all().order_by('-id'))[:5]
+    course_hot = filter(check_existed, Period.objects.all().order_by('?'))[:5]
+    course_recommend = filter(check_existed, Period.objects.all().order_by('?'))[:5]
 
     current_user = request.user
 
@@ -93,15 +96,16 @@ def board(request):    # default of pid is 1
 
 
 def add(request):
+    """Add page view"""
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
 
         # add Timetable
-    if request.method == 'POST':            # if the form has been submitted...
-        form = InsertTimetableForm(request.POST)             # A form bound to the POST data
+    if request.method == 'POST':  # if the form has been submitted...
+        form = InsertTimetableForm(request.POST)  # form bound to the POST data
         current_user = request.user
         if not current_user.is_authenticated():
-            return HttpResponse("Pls <a href='/users/auth_login'>login</a> first")
+            return HttpResponse("<a href='/users/auth_login'>Login</a> first")
         else:
             if form.is_valid():          # All validation rules pass
                 new_timetable = Timetable(

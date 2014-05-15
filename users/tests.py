@@ -3,58 +3,71 @@ from django.contrib.auth.models import User
 from users.forms import *
 # Create your tests here.
 
-user1 = User(username = 'vuong',
-             password = '123',)
-user2 = User(username = 'hoang',
-             password = '94',)
-user3 = User(username = 'hoang',
-             password = '456',)
-user4 = User(username = 'nguyen',
-             password = '123',)
+USER1 = User(username='vuong',
+             password='123',)
+USER2 = User(username='hoang',
+             password='94',)
+USER3 = User(username='hoang',
+             password='456',)
+USER4 = User(username='nguyen',
+             password='123',)
 
-def compareTwoUsers(u1 = User, u2 = User):
-        if u1.username != u2.username:
-            return False
-        if u1.password != u2.password:
-            return False
-        return True
 
-class testUsers(TestCase):
+def compare_two_users(u1=User, u2=User):
+    """
+    2 users are different only with unique username and password
+    """
+    if u1.username != u2.username:
+        return False
+    if u1.password != u2.password:
+        return False
+    return True
 
-    def testUserIsValid(self):
-        self.assertTrue(isinstance(user1, User))
-        self.assertTrue(isinstance(user2, User))
-        self.assertTrue(isinstance(user3, User))
-        self.assertTrue(isinstance(user4, User))
 
-    def testSamePeriodShouldBeEqual(self):
-        self.assertTrue(compareTwoUsers(user1,user1))
+class TestUsers(TestCase):
+    """User unit tests"""
+    def test_user_is_valid(self):
+        """Check if user is valid"""
+        self.assertTrue(isinstance(USER1, User))
+        self.assertTrue(isinstance(USER2, User))
+        self.assertTrue(isinstance(USER3, User))
+        self.assertTrue(isinstance(USER4, User))
 
-    def testDiffirentPeriodShouldNotBeEqual(self):
-        self.assertFalse(compareTwoUsers(user1,user2))
+    def test_same_user_should_be_equal(self):
+        """User is equal to him/herself"""
+        self.assertTrue(compare_two_users(USER1, USER1))
 
-    def testDiffirentLecturerShouldNotBeEqual(self):
-        self.assertFalse(compareTwoUsers(user1,user3))
+    def test_different_user_should_not_be_equal(self):
+        """Users with different properties are different"""
+        self.assertFalse(compare_two_users(USER1, USER2))
 
-    def testDiffirentCodeShouldNotBeEqual(self):
-        self.assertFalse(compareTwoUsers(user2,user4))
+    def test_different_username_should_not_be_equal(self):
+        """Users with different username are different"""
+        self.assertFalse(compare_two_users(USER1, USER3))
 
-class testPeriodsForms(TestCase):
+    def test_different_password_should_not_be_equal(self):
+        """Users withd different password are different"""
+        self.assertFalse(compare_two_users(USER2, USER4))
 
-    def testValidLoginForm(self):
+
+class TestPeriodsForms(TestCase):
+    """Period form unit tests"""
+    def test_valid_login_form(self):
+        """Check if login form is valid"""
         content = {
-            'username':user1.username,
-            'password':user1.password,
+            'username': USER1.username,
+            'password': USER1.password,
         }
         form = LoginForm(data=content)
         self.assertTrue(form.is_valid())
 
-    def testValidRegisterForm(self):
-        user = User(username = 'hoangvuong',
-                    first_name = 'Vuong',
-                    last_name = 'Nguyen',
-                    email = 'hoangvuong94st@gmail.com',
-                    password = '123456',)
+    def test_valid_register_form(self):
+        """Check if register form is valid"""
+        user = User(username='hoangvuong',
+                    first_name='Vuong',
+                    last_name='Nguyen',
+                    email='hoangvuong94st@gmail.com',
+                    password='123456',)
         content = {
             'username': user.username,
             'firstname': user.first_name,
