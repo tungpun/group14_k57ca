@@ -3,6 +3,7 @@ from django.conf.urls import patterns, url
 
 import views
 
-URLPATTERNS = patterns('',
+urlpatterns = patterns('',
                        url(r'^board$', views.board, name='board'),
+                       url(r'^$', views.board, name='index'),
                        url(r'^add/$', views.add, name='add'))

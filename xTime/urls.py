@@ -5,7 +5,7 @@ from django.views.generic.base import RedirectView
 from django.contrib import admin
 admin.autodiscover()
 
-URLPATTERNS = patterns('',
+urlpatterns = patterns('',
                        url(r'^admin/', include(admin.site.urls)),
                        url(r'^periods/', include('periods.urls')),
                        url(r'^users/', include('users.urls')),
