@@ -13,7 +13,8 @@ def send_notification(request):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/users/auth_login')
 
-    if request.method == 'POST':
+    return HttpResponseRedirect('/users/gateway/do=9')
+    """if request.method == 'POST':
         form = GetNotification(request.POST)
         if form.is_valid():
             new_noti = Notification(text=form.cleaned_data['text'],
@@ -27,5 +28,4 @@ def send_notification(request):
         form = GetNotification()
 
     return render(request, 'notifications/send/index.html', {
-        'form': form})
-
+        'form': form})"""
