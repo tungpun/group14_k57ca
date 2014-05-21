@@ -100,6 +100,8 @@ def gateway(request, pid="0"):
         message = "You have no right to edit this period!"
     elif pid == "8":
         message = "You have no right to remove this period!"
+    elif pid == "9":
+        message = "Under Construction!!!"
     return render(
         request,
         'users/gateway/index.html', {
